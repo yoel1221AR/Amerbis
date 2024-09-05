@@ -1,14 +1,12 @@
 import { CommonModule, CurrencyPipe, DatePipe } from '@angular/common';
 // import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { NgModule } from '@angular/core';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatSortModule } from '@angular/material/sort';
 import { StoreModule } from '@ngrx/store';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { SharedModule } from '../shared/shared.module';
 import { IpButtonFiltersComponent } from './components/ip-button-filters/ip-button-filters.component';
-import { IpFiltersComponent } from './components/ip-filters/ip-filters.component';
 import { RootComponent } from './components/root/root.component';
 import { AbHomeViewComponent } from './views/ip-dashboard-view/ab-home-view.component';
 import { DirectorsComponent } from './components/directors/directors.component';
@@ -26,7 +24,6 @@ import { FinsuiteRoutingModule } from './finsuite-routing.module';
 @NgModule({
   declarations: [
     RootComponent,
-    IpFiltersComponent,
     IpButtonFiltersComponent,
     AbHomeViewComponent,
     DirectorsComponent,
@@ -46,11 +43,8 @@ import { FinsuiteRoutingModule } from './finsuite-routing.module';
     SharedModule,
     MatNativeDateModule,
     TranslateModule,  
-    MatSortModule,   CommonModule,
-    FormsModule,
-    ReactiveFormsModule,
- 
-    FormsModule,
+    MatSortModule, 
+    CommonModule,
   ],
   providers: [
     TranslateService,
