@@ -1,0 +1,90 @@
+<!-- TODO: translations' naming -->
+<div class="ip-company-cards" *ngIf="this.data">
+  <div class="ip-company-cards__card">
+    <div class="ip-company-cards__card-header">
+      <p class="ip-company-cards__card-header-text">
+        {{ "IP.DASHBOARD-COMPANY-CARD.TOTAL-PAYED" | translate }}
+      </p>
+      <img
+        class="ip-company-cards__card-header-icon"
+        src="assets/img/ip-invoices-employees/approved.svg"
+        alt="approved"
+      />
+    </div>
+    <div class="ip-company-cards__card-value">
+      <p class="ip-company-cards__card-value-text">
+        {{ 
+          this.invoicePayments >= 0 ?
+          (this.invoicePayments | currency) :
+          this.invoicePaymentsFallback
+        }}
+      </p>
+    </div>
+  </div>
+
+  <div class="ip-company-cards__card">
+    <div class="ip-company-cards__card-header">
+      <p class="ip-company-cards__card-header-text">
+        {{ "IP.DASHBOARD-COMPANY-CARD.TOTAL-APPROVED" | translate }}
+      </p>
+      <img
+        class="ip-company-cards__card-header-icon"
+        src="assets/img/ip-invoices-employees/pending.svg"
+        alt="pending"
+      />
+    </div>
+    <div class="ip-company-cards__card-value">
+      <p class="ip-company-cards__card-value-text">
+        {{ 
+          this.data.pending >= 0 ?
+          this.data.pending :
+          this.fallbackData.pending
+        }}
+      </p>
+    </div>
+  </div>
+
+  <div class="ip-company-cards__card">
+    <div class="ip-company-cards__card-header">
+      <p class="ip-company-cards__card-header-text">
+        {{ "IP.DASHBOARD-COMPANY-CARD.TOTAL-EXPIRED" | translate }}
+      </p>
+      <img
+        class="ip-company-cards__card-header-icon"
+        src="assets/img/ip-invoices-employees/expired.svg"
+        alt="expired"
+      />
+    </div>
+    <div class="ip-company-cards__card-value">
+      <p class="ip-company-cards__card-value-text">
+        {{ 
+          this.data.expired >= 0 ?
+          this.data.expired :
+          this.fallbackData.expired
+        }}
+      </p>
+    </div>
+  </div>
+
+  <div class="ip-company-cards__card">
+    <div class="ip-company-cards__card-header">
+      <p class="ip-company-cards__card-header-text">
+        {{ "IP.DASHBOARD-COMPANY-CARD.TOTAL-PENDING" | translate }}
+      </p>
+      <img
+        class="ip-company-cards__card-header-icon"
+        src="assets/img/ip-company-cards/remaining-payments.svg"
+        alt="rejected"
+      />
+    </div>
+    <div class="ip-company-cards__card-value">
+      <p class="ip-company-cards__card-value-text">
+        {{ 
+          this.remainingPayments >= 0 ?
+          (this.remainingPayments | currency) :
+          this.remainingPaymentsFallback
+        }}
+      </p>
+    </div>
+  </div>
+</div>

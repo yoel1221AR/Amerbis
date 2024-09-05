@@ -1,0 +1,65 @@
+{
+  "AB": {
+    "HOME-OPTIONS": {
+      "WE": "Nós",
+      "WHAT_DO_WE_DO": "O que fazemos?"
+  
+    },
+ 
+    "HEADER": {
+      "LANGUAGES": {
+        "ES": "Espanhol (ES)",
+        "PT": "Portugués (PS)"
+      }
+    },
+
+    "WE": {
+      "DESCRIPTION":"Nossa razão de ser é simplificar a complexidade e reduzir a improdutividade de nossos parceiros.  Não somos apenas uma consultoria dedicada a fornecer serviços para a indústria e a produção agrícola; somos uma empresa que oferece soluções inovadoras e sustentáveis."
+   ,"OPTIONS":{
+      "PURPOSE":{
+      "TITLE":"Propósito",
+    "DESCRIPTION":"Nosso propósito é simplificar e otimizar processos, transformar o complexo em simples com um método ágil, humano e organizado."
+      },
+    "PRIORITY":{
+      "TITLE":"Prioridade",
+    "DESCRIPTION":"Realizamos nosso trabalho com uma prioridade: as pessoas. Porque entendemos que os humanos, mais do que recursos, são seres humanos"
+    },
+    "DESCRIPTION":{
+      "TITLE":"Onde há problemas, vemos oportunidades..."}
+   
+  } },
+  "SERVICES": {
+    "1": {
+      "TITLE": "Recursos Humanos",
+      "1": "Busca e Seleção de Pessoal.",
+      "2": "Recrutamento de Pessoal Migrante e Não Migrante",
+      "3": "Gestão Administrativa dos Recursos e Exames Médicos",
+      "4": "Integração Laboral e de Segurança e Higiene",
+      "5": "Supervisão de Pessoal",
+      "6": "Logística e Transferências"
+    },
+    "2": {
+      "TITLE": "Processos Produtivos e de Gestão",
+      "1": "Assistência Contínua ao Pessoal nas Plantas",
+      "2": "Processamento de Folha de Pagamento"
+    },
+    "3": {
+      "TITLE": "Simplificar Negócios",
+      "1": "Busca e Seleção de Pessoal.",
+      "2": "Recrutamento de Pessoal Migrante e Não Migrante",
+      "3": "Gestão Administrativa dos Recursos e Exames Médicos",
+      "4": "Integração Laboral e de Segurança e Higiene",
+      "5": "Supervisão de Pessoal",
+      "6": "Logística e Transferências"
+    },
+    "4": {
+      "TITLE": "Formação e Educação",
+      "1": "Apoio nas Estratégias Operacionais, Logísticas e de Negócios",
+      "2": "Gestão de P&D",
+      "3": "Gestão Ambiental",
+      "4": "Formação Ética e Suporte Emocional para os Funcionários",
+      "5": "Atualização de Informações sobre Novidades nos Regimes Trabalhistas"
+    }
+  }
+ 
+   }}

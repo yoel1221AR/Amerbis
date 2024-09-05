@@ -1,0 +1,65 @@
+
+{ "AB": {
+    "HOME-OPTIONS": {
+      "WE": "Nosotros",
+      "WHAT_DO_WE_DO": "Qué hacemos?"
+  
+    },
+ 
+    "HEADER": {
+      "LANGUAGES": {
+        "ES": "Español (ES)",
+        "PT": "Portugués (PS)"
+      }
+    },
+    
+    "WE": {
+      "DESCRIPTION":"Nuestra razón de ser es simplificar la complejidad y disminuir la improductividada de nuestros socios. No somos sólo una consultara dedicada a proporcionar servicios a la industria y a la producción agrícola, somos una empresa que proporciona soluciones innovadores y sostenibles."
+,"OPTIONS":{
+      "PURPOSE":{
+      "TITLE":"Propósito",
+    "DESCRIPTION":"Nuestro propósito es simplificar y optimizar los procesos, transformar lo complejo en sencillo con un metodo agil, humano y organizado."
+      },
+    "PRIORITY":{
+      "TITLE":"Prioridad",
+    "DESCRIPTION":"Hacemos nuestro trabajo con una prioridad, las personas. Porque entendemos que los humanos, mas que recursos somos seres humanos."
+    },
+    "DESCRIPTION":{
+      "TITLE":"Donde hay problemas, nosotros vemos oportunidades..."}
+   
+  }
+    },
+    "SERVICES": {
+    "1": {
+      "TITLE": "Recursos Humanos",
+      "1": "Búsqueda y Selección de Personal.",
+      "2": "Reclutamiento de Personal Migrante y No Migrante",
+      "3": "Gestión Administrativa de los Recursos y Exámenes Médicos",
+      "4": "Inducción Laboral y de Seguridad e Higiene",
+      "5": "Supervisión de Personal",
+      "6": "Logística y Traslados"
+    },
+    "2": {
+      "TITLE": "Procesos Productivos y de Gestión",
+      "1": "Asistencia Continua al Personal en Plantas",
+      "2": "Liquidación de Haberes"
+    },
+    "3": {
+      "TITLE": "Simplificar Negocios",
+      "1": "Apoyo en las Estrategias Operativas, Logísticas y del Negocio",
+      "2": "Gestión de I+D",
+      "3": "Gestión Medioambiental",
+      "4": "Formación Ética y Soporte Emocional de los Empleados",
+      "5": "Actualización Informativa sobre Novedades de los Regímenes Laborales"
+    },
+    "4": {
+      "TITLE": "Formación y educación",
+      "1": "Apoyo en las Estrategias Operativas, Logísticas y del Negocio",
+      "2": "Gestión de I+D",
+      "3": "Gestión Medioambiental",
+      "4": "Formación Ética y Soporte Emocional de los Empleados",
+      "5": "Actualización Informativa sobre Novedades de los Regímenes Laborales"
+    }
+  }
+   
+  }}

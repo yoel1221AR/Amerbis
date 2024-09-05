@@ -1,0 +1,30 @@
+<div class="ip-header">
+  <div class="ip-header__title">
+    <div
+      class="ip-header__title-button"
+      *ngIf="showTitleButton()"
+      (click)="goBack()"
+    >
+      <img src="assets/img/header/ep_back.svg" />
+    </div>
+    {{ Title | translate }}
+  </div>
+  <div class="ip-header__content">
+    <button  *ngIf="role == 'ENTERPRISE_MANAGER' || role == 'SUPPLIER_MANAGER'"  mat-button [matMenuTriggerFor]="menu">
+      <img src="assets/img/header/SettingsHeader.svg" />
+    </button>
+    <mat-menu #menu="matMenu" >
+        <button *ngIf="role == 'SUPPLIER_MANAGER'" routerLink="/invopay/admin-supplier" mat-menu-item>
+          Administrar usuarios
+        </button>
+        <button *ngIf="role == 'ENTERPRISE_MANAGER'" routerLink="/invopay/admin" mat-menu-item>
+            Administrar usuarios
+        </button>
+        <button *ngIf="role == 'ENTERPRISE_MANAGER'" routerLink="/invopay/admin-enterprise" mat-menu-item>
+            Administrar empresas
+        </button>
+    </mat-menu>
+    <div><app-langSelector></app-langSelector></div>
+    <div class="ip-header__content-name">{{ this.userName }}</div>
+  </div>
+</div>

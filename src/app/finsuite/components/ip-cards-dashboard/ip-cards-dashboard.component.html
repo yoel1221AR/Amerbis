@@ -1,0 +1,120 @@
+<div class="ip-cards-dashboard" *ngIf="cards && type == 'business';else providerCards">
+  <div class="ip-cards-dashboard__row">
+    <div class="ip-cards-dashboard__row-card">
+      <div class="ip-cards-dashboard__row-card-title">{{ cards[0].title }}</div>
+      <div class="ip-cards-dashboard__row-card-number">
+        {{ cards[0].amount }}
+      </div>
+      <div
+        [style.color]="cards[0].gain ? '#3DD26A' : '#F00'"
+        class="ip-cards-dashboard__row-card-percentaje"
+      >
+        <img
+          *ngIf="cards[0].gain"
+          src="assets\img\info-cards\Arrow 1.svg"
+          alt=""
+        />
+        <img
+          *ngIf="!cards[0].gain"
+          src="assets\img\info-cards\Arrow 1 (1).svg"
+          alt=""
+        />
+        {{ cards[0].percentage }}
+      </div>
+      <div class="ip-cards-dashboard__row-card-time">{{ cards[0].text }}</div>
+    </div>
+    <div class="ip-cards-dashboard__row-card">
+      <div class="ip-cards-dashboard__row-card-title">{{ cards[1].title }}</div>
+      <div class="ip-cards-dashboard__row-card-number">
+        {{ cards[1].amount }}
+      </div>
+      <div
+        [style.color]="cards[1].gain ? '#3DD26A' : '#F00'"
+        class="ip-cards-dashboard__row-card-percentaje"
+      >
+        <img
+          *ngIf="cards[1].gain"
+          src="assets\img\info-cards\Arrow 1.svg"
+          alt=""
+        />
+        <img
+          *ngIf="!cards[1].gain"
+          src="assets\img\info-cards\Arrow 1 (1).svg"
+          alt=""
+        />
+        {{ cards[1].percentage }}
+      </div>
+      <div class="ip-cards-dashboard__row-card-time">{{ cards[1].text }}</div>
+    </div>
+  </div>
+
+  <div class="ip-cards-dashboard__row">
+    <div class="ip-cards-dashboard__row-card">
+      <div class="ip-cards-dashboard__row-card-title">{{ cards[2].title }}</div>
+      <div class="ip-cards-dashboard__row-card-number">
+        {{ cards[2].amount }}
+      </div>
+      <div
+        [style.color]="cards[2].gain ? '#3DD26A' : '#F00'"
+        class="ip-cards-dashboard__row-card-percentaje"
+      >
+        <img
+          *ngIf="cards[2].gain"
+          src="assets\img\info-cards\Arrow 1.svg"
+          alt=""
+        />
+        <img
+          *ngIf="!cards[2].gain"
+          src="assets\img\info-cards\Arrow 1 (1).svg"
+          alt=""
+        />
+        {{ cards[2].percentage }}
+      </div>
+      <div class="ip-cards-dashboard__row-card-time">{{ cards[2].text }}</div>
+    </div>
+    <div class="ip-cards-dashboard__row-card">
+      <div class="ip-cards-dashboard__row-card-title">{{ cards[3].title }}</div>
+      <div class="ip-cards-dashboard__row-card-number">
+        {{ cards[3].amount }}
+      </div>
+      <div
+        [style.color]="cards[3].gain ? '#3DD26A' : '#F00'"
+        class="ip-cards-dashboard__row-card-percentaje"
+      >
+        <img
+          *ngIf="cards[3].gain"
+          src="assets\img\info-cards\Arrow 1.svg"
+          alt=""
+        />
+        <img
+          *ngIf="!cards[3].gain"
+          src="assets\img\info-cards\Arrow 1 (1).svg"
+          alt=""
+        />
+        {{ cards[3].percentage }}
+      </div>
+      <div class="ip-cards-dashboard__row-card-time">{{ cards[3].text }}</div>
+    </div>
+  </div>
+</div>
+
+<ng-template #providerCards>
+  <div class="ip-cards-dashboard__provider">
+    <div class="ip-cards-dashboard__provider-card" *ngFor="let card of cards">
+      <div class="ip-cards-dashboard__provider-card-title">{{card.title}}</div>
+      <div class="ip-cards-dashboard__provider-card-amount">{{card.amount}}</div>
+      <div class="ip-cards-dashboard__provider-card-text">{{card.text}}</div>
+      <span class="ip-cards-dashboard__provider-card-percentage" [ngStyle]="{
+        color: card.gain ? '#03DE73' : '#F52D56'
+      }">
+      <svg [ngStyle]="{
+        'transform' : card.gain ? '' : 'scale(1, -1)'
+      }" class="ip-cards-dashboard__provider-card-percentage-icon" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+        <path [ngStyle]="{
+          'fill' : card.gain ? '#03DE73' : '#F52D56'
+        }" d="M5 0L0 5H3.33333L3.33333 10L6.66667 10V5H10L5 0Z" fill="#03DE73"/>
+      </svg>
+      {{card.percentage}}%</span>
+    </div>
+  </div>
+</ng-template>

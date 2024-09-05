@@ -1,0 +1,7 @@
+<ul class="ip-button-filters">
+  <li class="ip-button-filters__option" *ngFor="let option of options_" (click)="onClick(option)" [ngStyle]="{
+    'background-color' : option == optionSelected ? '#f3f2fe' : ''
+  }">
+    <span class="ip-button-filters__option-text">{{option}}</span>
+  </li>
+</ul>

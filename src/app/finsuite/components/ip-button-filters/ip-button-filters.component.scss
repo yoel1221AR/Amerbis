@@ -1,0 +1,50 @@
+.ip-button-filters{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  height: auto;
+  width: auto;
+  list-style: none;
+  padding: 0;
+  &__option{
+    display: flex;
+    align-items: center;
+    border-radius: 0.26rem;
+    height: 1.85rem;
+    width: auto;
+    padding: 0 1rem;
+    transition: all .15s;
+    cursor: pointer;
+    &:hover{
+      background-color: #f3f2fe80;
+    }
+    &:active{
+      background-color: #ecebf8!important;
+    }
+    &-text{
+      display: block;
+      line-height: 0.8;
+      text-transform: uppercase;
+      font-weight: 500; font-size: 0.75rem;
+      color: #818186;
+      user-select: none;
+    }
+  }
+
+  @media (width < 620px){
+    gap: 0.7rem;
+    &__option{
+      display: flex;
+      align-items: center;
+      border-radius: 0.22rem;
+      height: 1.6rem;
+      width: auto;
+      padding: 0 0.7rem;
+      transition: all .15s;
+      cursor: pointer;
+      &-text{
+        font-size: 0.625rem;
+      }
+    }
+  }
+}

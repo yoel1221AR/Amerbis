@@ -1,0 +1,62 @@
+<div class="ip-income-card" *ngIf="incomeEmployee">
+  <div class="ip-income-card__title">
+    <span class="ip-income-cards__title-text">{{
+      "IP.EMPLOYEE-INCOME-CARD.TOTAL" | translate
+    }}</span
+    ><span
+      ><img
+        class="ip-income-card__title-ico"
+        src="assets/icons/alert-circle.svg"
+        alt="Alert"
+    /></span>
+  </div>
+  <div class="ip-income-card__income">
+    <span class="ip-income-card__income-value">
+      {{ incomeEmployee.totalRevenue | currency }}
+    </span>
+  </div>
+  <div class="ip-income-card__limit">
+    <p class="ip-income-card__limit-text">
+      {{ "IP.EMPLOYEE-INCOME-CARD.TOTAL-INVOICES" | translate }}
+    </p>
+    <div
+      class="ip-income-card__limit-bar progress"
+      role="progressbar"
+      [attr.aria-valuenow]="incomeEmployee.currentDeadlinePercentage"
+      aria-valuemin="0"
+      aria-valuemax="100"
+    >
+      <div
+        class="ip-income-card__limit-bar-fill"
+        [ngStyle]="{ width: incomeEmployee.currentDeadlinePercentage + '%' }"
+      ></div>
+    </div>
+  </div>
+  <div class="ip-income-card__indicators">
+    <div class="ip-income-card__indicators-limit">
+      <div>
+        <img src="assets/icons/indicator-inactive.svg" alt="Indicator" />
+      </div>
+      <span class="ip-income-card__indicators-limit-value">{{
+        incomeEmployee.currentDeadlineLimit | currency
+      }}</span>
+      <span class="ip-income-card__indicators-limit-today">
+        {{ incomeEmployee.lastDay | date : "dd/MM/yyyy" }}
+      </span>
+    </div>
+    <div class="ip-income-card__indicators-limit">
+      <div>
+        <img src="assets/icons/indicator-active.svg" alt="Indicator" />
+      </div>
+      <span class="ip-income-card__indicators-limit-value">{{
+        incomeEmployee.currentDeadlineRevenue | currency
+      }}</span>
+      <span class="ip-income-card__indicators-limit-today">
+        {{ "IP.EMPLOYEE-INCOME-CARD.FROM" | translate }}
+        {{ incomeEmployee.deadlineStartDate | date : "dd/MM/yyyy" }}
+        {{ "IP.EMPLOYEE-INCOME-CARD.TO" | translate }}
+        {{ incomeEmployee.deadlineEndDate | date : "dd/MM/yyyy" }}
+      </span>
+    </div>
+  </div>
+</div>

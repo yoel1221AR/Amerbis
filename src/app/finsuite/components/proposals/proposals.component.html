@@ -1,0 +1,89 @@
+
+<div class="ab-proposals">
+<div class="ab-proposals__background">
+  <div class="ab-proposals__standars">
+   
+    <div  class="ab-proposals__title">
+      <div  class="ab-proposals__title-border">
+      {{"AB.HOME-OPTIONS.WHAT_DO_WE_DO" | translate}}
+      </div> 
+    </div> 
+    
+
+
+      <div class="ab-proposals__options">
+
+
+<div class="ab-proposals__options-option" (click)="showComponent('RecursosHumanos')">
+  <img
+    loading="lazy"
+    class="ab-proposals__options-option--image"
+    src="../../../assets/Laboratorio.jpg"
+    alt="Recursos Humanos"
+  />
+  <div class="ab-proposals__options-option--text">
+    {{"AB.SERVICES.1.TITLE" | translate}}
+  </div>
+</div>
+
+<div class="ab-proposals__options-option" (click)="showComponent('Procesosproductivosydegestion')">
+  <img
+    loading="lazy"
+    class="ab-proposals__options-option--image"
+    src="../../../assets/Laboratorio.jpg"
+    alt="Procesos productivos y de gestion"
+  />
+  <div class="ab-proposals__options-option--text">
+    {{"AB.SERVICES.2.TITLE" | translate}}
+  </div>
+</div>
+
+<div class="ab-proposals__options-option" (click)="showComponent('SimplificarNegocios')">
+  <img
+    loading="lazy"
+    class="ab-proposals__options-option--image"
+    src="../../../assets/Laboratorio.jpg"
+    alt="Simplificar negocios"
+  />
+  <div class="ab-proposals__options-option--text">
+    {{"AB.SERVICES.3.TITLE" | translate}}
+  </div>
+</div>
+
+<div class="ab-proposals__options-option" (click)="showComponent('FormacionEducacion')">
+  <img
+    loading="lazy"
+    class="ab-proposals__options-option--image"
+    src="../../../assets/Laboratorio.jpg"
+    alt="Formación y educación"
+  />
+  <div class="ab-proposals__options-option--text">
+    {{"AB.SERVICES.4.TITLE" | translate}}
+  </div>
+</div>
+
+
+</div>
+
+  </div>
+
+
+
+</div>
+
+<!-- Mostrar el componente según la selección con animación -->
+<div *ngIf="activeComponent === 'RecursosHumanos'" @fadeInOut>
+  <app-laboratory-services></app-laboratory-services>
+</div>
+
+<div *ngIf="activeComponent === 'Procesosproductivosydegestion'" @fadeInOut>
+  <app-iso-standars></app-iso-standars>
+</div>
+
+<div *ngIf="activeComponent === 'SimplificarNegocios'" @fadeInOut>
+  <app-laboratory-services></app-laboratory-services>
+</div>
+
+<div *ngIf="activeComponent === 'FormacionEducacion'" @fadeInOut>
+  <app-internal-audits></app-internal-audits>
+</div>

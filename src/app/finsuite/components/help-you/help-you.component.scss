@@ -1,0 +1,129 @@
+.background {
+    background-image: url(../../../../assets/Fondo.png);
+  background-color: rgb(255, 255, 255);
+  background-size: cover;
+  height: 50%;
+  position: relative;
+  margin-left: 0;
+}
+
+.standars {
+  background-color: rgba(47, 107, 119, 0.7);
+  background-size: cover;
+  width: auto;
+  border: none;
+  color: white;
+  display: block;
+  text-overflow: clip;
+  overflow: hidden;
+  padding: 0 !important ;
+  margin-bottom: 0;
+}
+
+.row {
+  margin-top: 5%;
+  width: 90%;
+  margin-bottom: 100px;
+}
+
+a {
+  font-family: 'gotham-medium';
+}
+
+h1 {
+  font-family: 'gotham-bold';
+  margin-bottom: 0;
+}
+h4 {
+  font-family: 'gotham-bold';
+  margin-bottom: 0;
+}
+
+p {
+  font-size: large;
+  width: 80%;
+}
+
+/* Celular-Tablet */
+@media only all and (max-device-width: 1085px) {
+  .background {
+      background-image: url(../../../../assets/Fondo.png);
+    background-color: rgb(255, 255, 255);
+    background-size: cover;
+    height: 100%;
+    position: relative;
+    padding: 0;
+  }
+
+  .standars {
+    background-size: cover;
+    width: 100%;
+    height: 80%;
+    border: none;
+  }
+}
+
+@media only all and (max-width: 900px) {
+  .background {
+      background-image: url(../../../../assets/Fondo.png);
+    background-color: rgb(255, 255, 255);
+    background-size: cover;
+    height: 50%;
+    position: relative;
+    padding: 0;
+  }
+  .standars {
+    margin-bottom: 0;
+  }
+
+  p {
+    font-size: medium;
+  }
+}
+
+@media only all and (max-width: 700px) {
+  .background {
+      background-image: url(../../../../assets/Fondo.png);
+    background-color: rgb(255, 255, 255);
+    background-size: cover;
+    height: auto;
+    width: 100%;
+    position: relative;
+    padding: 0;
+  }
+
+  h1 {
+    font-size: x-large;
+  }
+
+  h4 {
+    font-size: large;
+  }
+
+  p {
+    font-size: small;
+  }
+}
+@media only all and (max-width: 400px) {
+  .background {
+      background-image: url(../../../../assets/Fondo.png);
+    background-color: rgb(255, 255, 255);
+    background-size: cover;
+    height: 80%;
+    position: relative;
+    padding: 0;
+  }
+
+  h1 {
+    font-size: x-large;
+  }
+
+  h4 {
+    font-size: large;
+  }
+
+  p {
+    width: 80%;
+    font-size: small;
+  }
+}

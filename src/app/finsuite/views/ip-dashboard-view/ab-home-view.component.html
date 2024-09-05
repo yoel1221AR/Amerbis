@@ -1,0 +1,165 @@
+<div class="ab-home-view">
+<div class="ab-home-view__background"> 
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="ab-home-view__header">
+      <div class="ab-home-view__header-logo">AMERBIS</div>
+      <div class="ab-home-view__header-options d-none d-lg-flex">
+        <div>
+         <!--  <a class="cursor" href="#directors">{{ "AB.HOME-OPTIONS.WE" | translate }}</a>
+         -->
+          <a class="cursor" (click)="navigateToSection('directors')">{{ "AB.HOME-OPTIONS.WE" | translate }}</a>
+        </div>
+        <div>
+       
+          <a class="cursor" (click)="navigateToSection('proposals')">{{ "AB.HOME-OPTIONS.WHAT_DO_WE_DO" | translate }}</a> </div>
+        <div>
+          <app-langSelector></app-langSelector>
+        </div>
+        <img
+          loading="lazy"
+          class="ab-home-view__header-options--icono-mail"
+          src="../assets/icono-mail.png"
+          alt="icono de correo"
+        />
+      </div>
+      <button
+        class="navbar-toggler d-lg-none"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasRight"
+        aria-controls="offcanvasRight"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+  
+  <!-- Secciones -->
+  <section id="directors">
+    <app-directors class="section"></app-directors>
+  </section>
+  
+  <section id="proposals">
+    <app-proposals class="section"></app-proposals>
+  </section>
+  
+  
+
+      
+      <!-- Menú desplegable para pantallas medianas (md) -->
+<div
+class="offcanvas offcanvas-end"
+tabindex="-1"
+id="offcanvasRight"
+aria-labelledby="offcanvasRightLabel"
+>
+<div class="offcanvas-header">
+  <h5 class="offcanvas-title" id="offcanvasRightLabel"></h5>
+  <button
+    type="button"
+    class="btn-close text-reset"
+    data-bs-dismiss="offcanvas"
+    aria-label="Close"
+  ></button>
+</div>
+<div class="offcanvas-body">
+  <ul class="navbar-nav">
+ 
+    <li class="nav-item mx-3">
+      <a
+        class="nav-link"
+        href="#directors"
+        data-bs-dismiss="offcanvas"
+        aria-label="Close"
+        >{{ "AB.HOME-OPTIONS.WE" | translate }}</a
+      >
+    </li>
+    <li class="nav-item mx-3">
+      <a
+        class="nav-link"
+        href="#proposals"
+        data-bs-dismiss="offcanvas"
+        aria-label="Close"
+        >{{ "AB.HOME-OPTIONS.WHAT_DO_WE_DO" | translate }}</a
+      >
+    </li>
+    <li class="nav-item mx-3"> <app-langSelector></app-langSelector></li>
+    <li class="nav-item mx-3">   <img
+      loading="lazy"
+      class="ab-home-view__header-options--icono-mail"
+      src="../assets/icono-mail.png"
+      alt=""
+    /> </li>
+
+  </ul>
+ 
+</div>
+</div>
+
+      
+      
+    
+</div>  
+</div> 
+
+
+<footer class="footer">
+
+ 
+
+      <div class="columna" >
+     
+
+     <div class="title">AMERBIS</div>
+
+        
+      </div>
+      <div class="columna" >
+      <div class="title">CONECTAMOS</div>
+        <a href="https://www.linkedin.com/company/s-y-c-consultores/"
+          ><img class="img-footer" src="../assets/icono-linkedIn.png"
+        />
+      </a>
+     
+          <a href="https://www.instagram.com"
+
+          ><img class="img-footer" src="../assets/icono-instagram.png"
+        /></a> 
+
+
+        <a href="https://www.instagram.com"
+
+        ><img class="img-footer" src="../assets/icono-mail.png"
+        /></a> 
+        
+        <a href="https://www.instagram.com"
+
+        ><img class="img-footer" src="../assets/icono-instagram.png"
+      /></a> 
+
+
+      
+      </div>
+
+ 
+
+         <div class="columna" >
+     
+          <img class="img-footer" src="../assets/icono-localizacion.png" />
+          <div class="title">CALLE 9 DE JULIO 456 - ROJAS</div>
+             
+           </div>
+
+
+         <div class="columna" >
+     
+          <img class="img-footer" src="../assets/icono-telefono.png" />
+          <div class="title">+54 9 02475 465695</div>
+             
+           </div>
+
+    
+  
+</footer>
+
+
