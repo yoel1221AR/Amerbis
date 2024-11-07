@@ -16,8 +16,9 @@ img {
   overflow: hidden;
 }
 
-.background {
-    background-image: url(../../../../assets/Fondo.png);
+.background {/* 
+    /* 
+  background-image: url(../../../../assets/Fondo.png); */ 
   background-color: rgb(255, 255, 255);
   background-size: cover;
   height: 100%;
@@ -45,8 +46,9 @@ p {
 
 /* Celular-Tablet */
 @media only all and (max-device-width: 1085px) {
-  .background {
-      background-image: url(../../../../assets/Fondo.png);
+  .background {/* 
+      /* 
+  background-image: url(../../../../assets/Fondo.png); */ 
     background-color: rgb(255, 255, 255);
     background-size: cover;
     height: 100%;

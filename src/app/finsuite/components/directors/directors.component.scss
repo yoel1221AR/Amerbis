@@ -1,6 +1,7 @@
 .ab-directors{
 &__background {
-  background-image: url(../../../../assets/Fondo.png);
+  /* 
+  background-image: url(../../../../assets/Fondo.png); */
   background-color: rgb(255, 255, 255);
   background-size: cover;
   height: 100%;
@@ -22,27 +23,52 @@
 
 &__banner{
   width: 100%;
-  height: 45vh;
+  height: 90vh;/* 
   object-fit: cover;
-  object-position: 10% 90%
+  object-position: 10% 90%; */
+  display: block;
+ background-size: cover; 
+  background-position: center; 
+  background-image: url(../../../../assets/img/banner.webp);
 
-}
+
+&-options{
+  position: absolute;
+  bottom: 10%; /* Ajusta esta distancia desde la parte superior según lo necesario */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.5rem; /* Espaciado de 0.5rem entre los botones */
+  z-index: 1;
+}}
 &__body{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  gap: 2rem;
-  padding: 4rem;
+  padding: 2rem 3rem;
   &-image{
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
     object-fit: cover;
+    width: 30%;
   }
   &-text{
-    text-align: center;
-    color: #ffff;
-    width: 43%
+    color: white;
+    display: flex;
+    flex-direction: column;
+    &--title{   font-family: 'Montserrat', sans-serif;
+      font-weight: 600; 
+      font-size: 78px;}
+    &--subtitle{
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 78px;
+    }
+    &--description{
+      font-family: 'Montserrat', sans-serif;
+  font-weight: 300; 
+  font-style: italic;
+  font-size: 40px;
+    }
+  
   }
 
 }
@@ -54,27 +80,28 @@
   justify-content: space-around;
   align-items: center;
   height: 20rem;
-  padding: 3rem 8rem;
+  padding: 2rem 3rem;
 
-  &-text{
-    width: 16%;
-    
-&--title{
-  font-size: 1rem;
-  font-weight: 600;
-}
-&--subtitle{
-  font-size: 0.85rem;
-  font-weight: 400;}
-&--description {
-  font-size: 1rem;
-  font-weight: 600;
-
-
-}
-}
+ 
 
 }
 
 
+
+}
+
+
+
+
+
+/* Botón 1 */
+.btn-1 { 
+    background-color: #007bff;
+}
+
+.btn-2 {
+   background-color: #6c757d;
+  
+  }.ab-directors__container {
+  position: relative; /* Necesario para que los botones se posicionen dentro del contenedor */
 }

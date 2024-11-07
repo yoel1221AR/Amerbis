@@ -1,0 +1,53 @@
+
+<div class="work-with-us">
+    <div class="work-with-us__background">
+      <div class="work-with-us__standars">
+       
+      <!--   <div  class="work-with-us__title">
+          <div  class="work-with-us__title-border">
+          {{"AB.HOME-OPTIONS.WHAT_DO_WE_DO" | translate}}
+          </div> 
+        </div>  -->
+        
+    
+    
+          <div class="work-with-us__options container-fluid">
+    
+    
+    <div class="work-with-us__options-option" (click)="showComponent('Amerbis-experience')">
+     <!--  <img
+        loading="lazy"
+        class="work-with-us__options-option--image"
+        src="../../../assets/Laboratorio.jpg"
+        alt="Recursos Humanos"
+      /> -->
+      <div class="work-with-us__options-option--text">
+       - {{"AB.WORK-WITH-US-EE-UU.AMERBIS-EXPERIENCE.TITLE" | translate}}
+      </div>
+    </div>
+    
+    <div class="work-with-us__options-option" (click)="showComponent('job-opportunities')">
+      <!-- <img
+        loading="lazy"
+        class="work-with-us__options-option--image"
+        src="../../../assets/Laboratorio.jpg"
+        alt="Procesos productivos y de gestion"
+      /> -->
+      <div class="work-with-us__options-option--text">
+       - {{"AB.WORK-WITH-US-EE-UU.JOB-OPPORTUNITIES.TITLE" | translate}}
+      </div>
+    </div> 
+    </div>  
+      </div> 
+     </div>
+    
+    <!-- Mostrar el componente según la selección con animación -->
+    <div *ngIf="activeComponent === 'Amerbis-experience'" @fadeInOut>
+      <app-amerbis-experience></app-amerbis-experience>
+    </div>
+    
+    <!-- Mostrar el componente según la selección con animación -->
+    <div *ngIf="activeComponent === 'job-opportunities'" @fadeInOut>
+      <app-job-opportunities></app-job-opportunities>
+    </div>
+ 

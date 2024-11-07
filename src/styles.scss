@@ -1,29 +1,16 @@
-// Custom Theming for Angular Material
-// For more information: https://material.angular.io/guide/theming
+// Importación de Angular Material (Debe ir primero)
 @use "@angular/material" as mat;
 
+// Importación de fuentes de Google
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
-
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
-// Plus imports for other components in your app.
-
-// Include the common styles for Angular Material. We include this here so that you only
-// have to load a single css file for Angular Material in your app.
-// Be sure that you only ever include this mixin once!
-@include mat.core();
-
-// Define the palettes for your theme using the Material Design palettes available in palette.scss
-// (imported above). For each palette, you can optionally specify a default, lighter, and darker
-// hue. Available color palettes: https://material.io/design/color/
+// Definición de paletas de colores de Angular Material
 $amerbis-primary: mat.define-palette(mat.$indigo-palette);
 $amerbis-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
-
-// The warn palette is optional (defaults to red).
 $amerbis-warn: mat.define-palette(mat.$red-palette);
 
-// Create the theme object. A theme consists of configurations for individual
-// theming systems such as "color" or "typography".
+// Definición del tema basado en las paletas
 $amerbis-theme: mat.define-light-theme(
   (
     color: (
@@ -34,30 +21,65 @@ $amerbis-theme: mat.define-light-theme(
   )
 );
 
-// Include theme styles for core and each component used in your app.
-// Alternatively, you can import and @include the theme mixins for each component
-// that you are using.
+// Aplicación del tema a todos los componentes de Angular Material
+@include mat.core();
 @include mat.all-component-themes($amerbis-theme);
 
-/* You can add global styles to this file, and also import other style files */
+// FUENTES PERSONALIZADAS
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/assets/fonts/Montserrat-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
 
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/assets/fonts/Montserrat-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/assets/fonts/Montserrat-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/assets/fonts/Montserrat-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/assets/fonts/Montserrat-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+// Estilos globales
 html,
 body {
   height: 100%;
-}
-
-body {
   margin: 0;
-  font-family: Inter, Roboto, "Helvetica Neue", sans-serif;
-  .mat-mdc-dialog-container .mdc-dialog__surface {
-    border-radius: 2rem !important;
-  }
+  font-family: 'Montserrat', sans-serif;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+button {
+  padding: 10px 20px !important;
+  color: white !important;
+  border: none !important;
+  border-radius: 0 !important;
+  cursor: pointer !important;
+  font-size: 16px !important;
+  text-transform: uppercase;
+}
 
-/* FADE ANIMATION */
-
+// Animación de desvanecimiento
 .fade-in {
   opacity: 0;
   animation: fadeIn 0.5s ease-in-out forwards;
@@ -69,7 +91,7 @@ body {
   }
 }
 
-/* Works on Chrome, Edge, and Safari */
+// Personalización de la barra de desplazamiento
 *::-webkit-scrollbar {
   width: 4px;
 }
@@ -90,46 +112,38 @@ body {
 
   *::-webkit-scrollbar-thumb {
     background-color: transparent;
-    border-radius: 20px;
   }
 }
-
-.mat-calendar-period-button {
-  pointer-events: none;
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
 }
-.mat-calendar-arrow {
-  display: none !important;
+p{
+  margin: 0;
 }
 
-.mat-calendar-body-cell {
-  &-content {
-    &:hover {
-      background: var(--loginButtonBackgroundColor);
-      opacity: 0.8;
-      color: #fff;
-    }
-    &.mat-focus-indicator {
-      background: #fff !important;
-      &:hover {
-        background-color: var(--loginButtonBackgroundColor) !important;
-      }
-    }
-
-    &.mat-calendar-body {
-      &-selected {
-        background-color: var(--loginButtonBackgroundColor) !important;
-
-        &:hover {
-          background-color: var(--loginButtonBackgroundColor) !important;
-          opacity: 0.8;
-        }
-      }
-    }
-  }
+.title-primary {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600; /* SemiBold */
+  font-size: 45px; /* Tamaño de fuente */
 }
-.mat-datepicker-content {
-  .mat-calendar {
-    width: 15rem !important;
-    height: 100% !important;
-  }
+.subtitle-primary{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400; /* Regular */
+  font-size: 32px; /* Tamaño de fuente */
+}
+
+.title{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600; /* SemiBold */
+  font-size: 78px; /* Tamaño de fuente */
+}
+.subtitle-on{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700; /* Bold */
+  font-size: 78px; /* Tamaño de fuente */
+}
+.subtitle-off{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600; /* SemiBold */
+  font-size: 78px; /* Tamaño de fuente */
 }

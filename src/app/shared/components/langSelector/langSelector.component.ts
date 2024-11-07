@@ -10,6 +10,7 @@ import { LangService } from '../../services/lang.service';
 })
 export class LangSelectorComponent implements OnInit {
   langs: Lang[] = [];
+  selectedLang!: Lang; // Propiedad para el idioma seleccionado
 
   constructor(
     public translate: TranslateService,
@@ -18,13 +19,11 @@ export class LangSelectorComponent implements OnInit {
 
   ngOnInit() {
     this.langs = this.langService.getAllLanguages();
+    this.selectedLang = this.langService.getCurrentLanguage(); // Inicializar el idioma seleccionado
   }
 
-  selectLang(lang: string) {
-    this.langService.setCurrentLanguage(lang);
-  }
-
-  getcurrentLang() {
-    return this.langService.getCurrentLanguage().code.toUpperCase();
+  selectLang(langCode: string) {
+    this.langService.setCurrentLanguage(langCode);
+    this.selectedLang = this.langs.find(lang => lang.code === langCode) || this.selectedLang;
   }
 }

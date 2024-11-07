@@ -1,0 +1,74 @@
+.what-we-do {
+
+&__background {
+  background-image: url(../../../../assets/img/banner-who-we-are.webp); 
+  background-color: rgb(255, 255, 255);
+  background-size: cover;
+  height: 100%;
+  position: relative;
+  margin-left: 0;
+}
+
+&__standars {
+  background-size: cover;
+  width: auto;
+  border: none;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  /* gap: 2rem; */
+  text-overflow: clip;
+  overflow: hidden;
+  padding: 3rem 0;
+  height: 63vh;
+  display: flex;
+  /* align-items: flex-end; */
+  justify-content: flex-end;
+}
+&__title{
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  text-transform: uppercase;
+  &-border{
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    padding: 0.5rem 2rem;
+    border: 3px solid #ffff;
+    border-radius: 1rem;
+  }
+}
+&__options{
+display: flex;
+flex-direction: column;
+justify-content: center;
+gap: 1rem;
+&-option{
+  display: flex;
+  /* flex-direction: column;
+  align-items: center;
+  width: 15%;
+  gap: 1.5rem; */
+ /*  &--image{
+    width: 6rem;
+    height: 5rem;
+    border-radius: 50%;
+    object-fit: cover;
+  } */
+  &--text{
+    justify-content: center;
+    display: flex;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1rem;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+  background-color: rgb(0, 203, 197, 0.7);
+}}}
+
+
+
+}
+
+

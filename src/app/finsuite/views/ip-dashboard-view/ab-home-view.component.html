@@ -1,24 +1,25 @@
 <div class="ab-home-view">
 <div class="ab-home-view__background"> 
   <nav class="navbar navbar-expand-lg sticky-top">
+    
     <div class="ab-home-view__header">
       <div class="ab-home-view__header-logo">AMERBIS</div>
       <div class="ab-home-view__header-options d-none d-lg-flex">
         <div>
          <!--  <a class="cursor" href="#directors">{{ "AB.HOME-OPTIONS.WE" | translate }}</a>
          -->
-          <a class="cursor" (click)="navigateToSection('directors')">{{ "AB.HOME-OPTIONS.WE" | translate }}</a>
+          <a class="cursor" (click)="navigateToSection('what-we-do')">{{ "AB.HOME-OPTIONS.WE" | translate }}</a>
         </div>
         <div>
        
-          <a class="cursor" (click)="navigateToSection('proposals')">{{ "AB.HOME-OPTIONS.WHAT_DO_WE_DO" | translate }}</a> </div>
+          <a class="cursor" (click)="navigateToSection('work-with-us')">{{ "AB.HOME-OPTIONS.WHAT_DO_WE_DO" | translate }}</a> </div>
         <div>
           <app-langSelector></app-langSelector>
         </div>
         <img
           loading="lazy"
           class="ab-home-view__header-options--icono-mail"
-          src="../assets/icono-mail.png"
+          src="../assets/icons/top-nav/icon-email.webp"
           alt="icono de correo"
         />
       </div>
@@ -32,6 +33,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
     </div>
+
   </nav>
   
   <!-- Secciones -->
@@ -39,10 +41,13 @@
     <app-directors class="section"></app-directors>
   </section>
   
-  <section id="proposals">
-    <app-proposals class="section"></app-proposals>
+  <section id="what-we-do">
+    <app-what-we-do class="section"></app-what-we-do>
   </section>
   
+  <section id="work-with-us">
+    <app-work-with-us class="section"></app-work-with-us>
+  </section>
   
 
       
