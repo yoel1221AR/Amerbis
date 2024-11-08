@@ -30,7 +30,16 @@
  background-size: cover; 
   background-position: center; 
   background-image: url(../../../../assets/img/banner.webp);
-
+&-home{
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  height: 90vh;
+  max-width: 95%;
+  object-fit: contain;
+}
 
 &-options{
   position: absolute;
@@ -40,6 +49,9 @@
   display: flex;
   gap: 0.5rem; /* Espaciado de 0.5rem entre los botones */
   z-index: 1;
+
+
+  
 }}
 &__body{
   display: flex;
