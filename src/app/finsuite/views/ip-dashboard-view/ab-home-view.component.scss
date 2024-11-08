@@ -50,6 +50,8 @@ a {
   color: #ffffff;
   text-decoration: none;
   font-family: 'gotham-medium';
+  background-color: transparent;
+  border: none;
 }
 
 
@@ -125,7 +127,10 @@ align-items: center;
 .section {
   padding-top: 70px; }
 
-/* Para mostrar el submenú al pasar el cursor sobre la opción */
+
+.dropdown-menu{
+  border-radius: 0;
+}  /* Para mostrar el submenú al pasar el cursor sobre la opción */
 .dropdown-submenu:hover > .dropdown-menu {
   display: block;
   position: absolute;
@@ -146,7 +151,14 @@ align-items: center;
 /* Estilo principal para mostrar el submenú */
 .dropdown-submenu {
   position: relative;
-  background-color: 00e2d4;
+}
+.dropdown-submenu {
+  background-color: #5b6ff6;;
+}
+
+.dropdown-submenu .dropdown-menu {
+  background-color: #00e2d4;
+  border: 2px solid rgb(87, 87, 87);
 }
 
 .dropdown-submenu > .dropdown-menu {
@@ -169,8 +181,12 @@ align-items: center;
 /* Efecto hover y selección de color violeta */
 .dropdown-item:hover,
 .dropdown-item:focus {
-    background-color: #8a2be2; /* Color violeta para hover */
+    background-color: #5b6ff6; /* Color violeta para hover */
     color: white;
+}
+.dropdown-submenu.show {
+  display: block;
+  background-color: #00e2d4;
 }
 
 .dropdown-submenu:hover > .dropdown-menu {
@@ -182,6 +198,19 @@ align-items: center;
 
 .dropdown-item.active,
 .dropdown-item.selected {
-    background-color: #8a2be2; /* Color violeta para el item seleccionado */
+    background-color: #5b6ff6; /* Color violeta para el item seleccionado */
     color: white;
+}
+.dropdown{
+  background-color: transparent;
+  border-color: transparent;
+}
+#dropdownMenuLink::after {
+  display: none;
+}
+.dropdown-submenu .dropdown-item.dropdown-toggle::after {
+  display: none;
+}
+a.dropdown-item{
+  color: black;
 }

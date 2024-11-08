@@ -28,17 +28,17 @@
           </a>
       
           <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <li><a class="dropdown-item" (click)="navigateToSection('work-with-us')">{{ "AB.HOME-OPTIONS.WORK_WITH_US" | translate }}</a></li>
-              <li><a class="dropdown-item" (click)="navigateToSection('business-services')">{{ "AB.HOME-OPTIONS.BUSINESS_SERVICES" | translate }}</a></li>
-              <li><a class="dropdown-item" (click)="navigateToSection('about-us')">{{ "AB.HOME-OPTIONS.ABOUT_US" | translate }}</a></li>
-              <li><a class="dropdown-item" (click)="navigateToSection('contact')">{{ "AB.HOME-OPTIONS.CONTACT" | translate }}</a></li>
+              <li><a class="dropdown-item" (click)="navigateToSection('work-with-us')">   - {{"AB.SERVICES.TEMPORARY-STAFF.TITLE" | translate}}</a></li>
+              <li><a class="dropdown-item" (click)="navigateToSection('business-services')">  - {{"AB.SERVICES.FACILITY-SERVICES.TITLE" | translate}}</a></li>
+              <li><a class="dropdown-item" (click)="navigateToSection('about-us')">  - {{"AB.SERVICES.PAYROLL.TITLE" | translate}}</a></li>
+              <li><a class="dropdown-item" (click)="navigateToSection('contact')">- {{"AB.SERVICES.SEARCH-SELECCTION.TITLE" | translate}}</a></li>
       
               <!-- Dropdown con submenú -->
               <li class="dropdown-submenu">
-                  <a class="dropdown-item dropdown-toggle" href="#">{{ "AB.HOME-OPTIONS.OTHER_SERVICES" | translate }}</a>
+                  <a class="dropdown-item dropdown-toggle" href="#">-{{"AB.WORK-WITH-US-EE-UU.AMERBIS-EXPERIENCE.TITLE" | translate}}</a>
                   <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" (click)="navigateToSection('service1')">{{ "AB.HOME-OPTIONS.SERVICE_1" | translate }}</a></li>
-                      <li><a class="dropdown-item" (click)="navigateToSection('service2')">{{ "AB.HOME-OPTIONS.SERVICE_2" | translate }}</a></li>
+                      <li><a class="dropdown-item" (click)="navigateToSection('service1')"> - {{"AB.WORK-WITH-US-EE-UU.AMERBIS-EXPERIENCE.SUBTITLE" | translate}}</a></li>
+                      <li><a class="dropdown-item" (click)="navigateToSection('service2')">  - {{"AB.WORK-WITH-US-EE-UU.JOB-OPPORTUNITIES.TITLE" | translate}}</a></li>
                   </ul>
               </li>
           </ul>
