@@ -125,19 +125,19 @@ p{
 color:#cccccc;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600; /* SemiBold */
-  font-size: 45px; /* Tamaño de fuente */
+  font-size: 30px; /* Tamaño de fuente */
 }
 .subtitle-primary{
   color:#cccccc;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400; /* Regular */
-  font-size: 32px; /* Tamaño de fuente */
+  font-size: 20px; /* Tamaño de fuente */
 }
 
 .title{
   font-family: 'Montserrat', sans-serif;
   font-weight: 600; /* SemiBold */
-  font-size: 78px; /* Tamaño de fuente */
+  font-size: 60px; /* Tamaño de fuente */
 }
 .subtitle-on{
   font-family: 'Montserrat', sans-serif;
@@ -151,4 +151,16 @@ color:#cccccc;
 }
 .cursor{
   cursor: pointer;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+flex-direction: row;
+padding: 3rem;
+}
+.columnas{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }

@@ -6,7 +6,8 @@ img {
   }
   
   .standars {
-    background-color: rgb(72, 163, 182, 0.7);
+    /* 
+    background-color: rgb(72, 163, 182, 0.7); */
     background-size: cover;
     padding: 0 0 0 0;
     width: auto;
@@ -162,4 +163,14 @@ img {
       margin: 0;
     }
   }
-  
+  .contenedor {
+    display: flex;
+    justify-content: center;
+  flex-direction: row;
+  padding: 3rem;
+  }
+  .columnas{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
