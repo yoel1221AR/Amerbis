@@ -15,8 +15,9 @@ img {
   color: white;
   display: block;
   text-overflow: clip;
-  overflow: hidden;
-  padding: 0 !important ;
+  overflow: hidden;/* 
+  padding: 0 !important ; */
+  padding: 2rem 3rem;
 }
 
 .background {

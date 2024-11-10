@@ -125,19 +125,22 @@ p{
 color:#cccccc;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600; /* SemiBold */
-  font-size: 30px; /* Tamaño de fuente */
-}
+/*   font-size: 30px; /* Tamaño de fuente */
+font-size: 4vh;
+} 
 .subtitle-primary{
   color:#cccccc;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400; /* Regular */
-  font-size: 20px; /* Tamaño de fuente */
+/*   font-size: 20px;  *//* Tamaño de fuente */
+font-size: 3vh;
 }
 
 .title{
   font-family: 'Montserrat', sans-serif;
   font-weight: 600; /* SemiBold */
-  font-size: 60px; /* Tamaño de fuente */
+/*   font-size: 60px; /* Tamaño de fuente */
+font-size: 10vh; 
 }
 .subtitle-on{
   font-family: 'Montserrat', sans-serif;
