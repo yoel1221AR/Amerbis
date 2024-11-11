@@ -76,17 +76,13 @@
   <app-temporary-staff></app-temporary-staff>
 </div>
 
-<!-- Mostrar el componente según la selección con animación -->
 <div *ngIf="activeComponent === 'Facility-Services'" @fadeInOut>
   <app-facility-services></app-facility-services>
 </div>
 
-
 <div *ngIf="activeComponent === 'Payroll'" @fadeInOut>
   <app-payroll></app-payroll>
 </div>
-
-
 
 <div *ngIf="activeComponent === 'Busqueda-Seleccion'" @fadeInOut>
   <app-search-selection></app-search-selection>

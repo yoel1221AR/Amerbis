@@ -23,7 +23,7 @@
 
 &__banner{
   width: 100%;
-  height: 82vh;/* 
+  height: 91vh;/* 
   object-fit: cover;
   object-position: 10% 90%; */
   display: block;
@@ -58,7 +58,6 @@
   flex-direction: row;
   align-items: center;
   padding: 2rem 3rem;
-  height: 70;
   &-image{
     object-fit: cover;
     width: 30%;
@@ -92,13 +91,8 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  padding: 2rem 3rem;
-
- 
-
+  padding: 3rem;
 }
-
-
 
 }
 

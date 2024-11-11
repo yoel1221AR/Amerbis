@@ -1,9 +1,9 @@
 <div class="langSelector">
   <button mat-button extended [matMenuTriggerFor]="menu" color="primary">
     <div class="langSelector__text-color">
-      <img [src]="selectedLang.img" alt="Lang" width="20" height="20" />
+      <img [src]="selectedLang.img" alt="Lang" class="lang" />
  <!--      <span class="ms-1">{{ selectedLang.label | translate }}</span> -->
-      <i>
+     <!--  <i>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="17"
@@ -12,7 +12,7 @@
         >
           <path fill="currentColor" d="M0 139h213L107 245z" />
         </svg>
-      </i>
+      </i> -->
     </div>
   </button>
   <mat-menu #menu="matMenu">
@@ -20,9 +20,9 @@
       mat-menu-item
       *ngFor="let lang of langs"
       (click)="selectLang(lang.code)"
+      style="padding: 0; margin: 0; width: auto; display: flex; align-items: center; justify-content: center;"
     >
-      <img [src]="lang.img" alt="{{ lang.label }}" width="20" height="20" style="margin-right: 8px;">
-<!--       {{ lang.label | translate }} -->
+      <img [src]="lang.img" alt="{{ lang.label }}" class="lang">
     </button>
   </mat-menu>
 </div>

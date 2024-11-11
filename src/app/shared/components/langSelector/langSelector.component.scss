@@ -3,3 +3,31 @@
   align-items: center;
   color: #9595a6;
 }
+
+button {
+  padding: 0 !important;
+}
+
+::ng-deep .mat-mdc-menu-panel {
+  min-width: auto !important;
+  max-width: auto !important;
+  width: auto !important;
+  padding: 0 !important;
+}
+
+::ng-deep .mat-mdc-menu-item {
+  padding: 0 !important;
+  margin: 0 !important;
+  width: auto !important;
+  min-width: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+::ng-deep .lang {
+  width: 3rem !important;
+  height: auto !important;
+  display: block !important;
+  margin: 0 !important;
+}

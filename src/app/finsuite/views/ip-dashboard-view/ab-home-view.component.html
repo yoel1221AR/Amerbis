@@ -28,31 +28,38 @@
           </a>
       
           <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <li><a class="dropdown-item" (click)="navigateToSection('work-with-us')">   - {{"AB.SERVICES.TEMPORARY-STAFF.TITLE" | translate}}</a></li>
-              <li><a class="dropdown-item" (click)="navigateToSection('business-services')">  - {{"AB.SERVICES.FACILITY-SERVICES.TITLE" | translate}}</a></li>
-              <li><a class="dropdown-item" (click)="navigateToSection('about-us')">  - {{"AB.SERVICES.PAYROLL.TITLE" | translate}}</a></li>
-              <li><a class="dropdown-item" (click)="navigateToSection('contact')">- {{"AB.SERVICES.SEARCH-SELECCTION.TITLE" | translate}}</a></li>
+              <li><a class="dropdown-item" (click)="navigateToSection('Personal-Temporario')">   - {{"AB.SERVICES.TEMPORARY-STAFF.TITLE" | translate}}</a></li>
+              <li><a class="dropdown-item" (click)="navigateToSection('Facility-Services')">  - {{"AB.SERVICES.FACILITY-SERVICES.TITLE" | translate}}</a></li>
+              <li><a class="dropdown-item" (click)="navigateToSection('Payroll')">  - {{"AB.SERVICES.PAYROLL.TITLE" | translate}}</a></li>
+              <li><a class="dropdown-item" (click)="navigateToSection('Busqueda-Seleccion')">- {{"AB.SERVICES.SEARCH-SELECCTION.TITLE" | translate}}</a></li>
       
               <!-- Dropdown con submenú -->
               <li class="dropdown-submenu">
                   <a class="dropdown-item dropdown-toggle" href="#">-{{"AB.WORK-WITH-US-EE-UU.AMERBIS-EXPERIENCE.TITLE" | translate}}</a>
                   <ul class="dropdown-menu">
-                      <li><a class="dropdown-item cursor" (click)="navigateToSection('service1')"> - {{"AB.WORK-WITH-US-EE-UU.AMERBIS-EXPERIENCE.SUBTITLE" | translate}}</a></li>
-                      <li><a class="dropdown-item cursor" (click)="navigateToSection('service2')">  - {{"AB.WORK-WITH-US-EE-UU.JOB-OPPORTUNITIES.TITLE" | translate}}</a></li>
+                      <li><a class="dropdown-item cursor" (click)="navigateToSection('Amerbis-experience')"> - {{"AB.WORK-WITH-US-EE-UU.AMERBIS-EXPERIENCE.SUBTITLE" | translate}}</a></li>
+                      <li><a class="dropdown-item cursor" (click)="navigateToSection('job-opportunities')">  - {{"AB.WORK-WITH-US-EE-UU.JOB-OPPORTUNITIES.TITLE" | translate}}</a></li>
                   </ul>
               </li>
           </ul>
       </div>
          
-         <div>
-          <app-langSelector></app-langSelector>
-        </div>
+      
+        <img
+          loading="lazy"
+          class="ab-home-view__header-options--icono-mail"
+          src="../assets/icons/top-nav/wpp.webp"
+          alt="icono de correo"
+        />
+       
+       
+     
         <img
           loading="lazy"
           class="ab-home-view__header-options--icono-mail"
           src="../assets/icons/top-nav/icon-email.webp"
           alt="icono de correo"
-        />
+        />     <app-langSelector></app-langSelector>
       </div>
       <button
         class="navbar-toggler d-lg-none"
