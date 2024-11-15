@@ -10,7 +10,7 @@
         <div>
          <!--  <a class="cursor" href="#directors">{{ "AB.HOME-OPTIONS.WE" | translate }}</a>
          -->
-          <a class="cursor" (click)="navigateToSection('what-we-do')">{{ "AB.HOME-OPTIONS.WE" | translate }}</a>
+          <a class="cursor" (click)="navigateToSection('what-we-do')">  <img class="icon-textura-points" src="../assets/icons/textura-points.png" alt="">{{ "AB.HOME-OPTIONS.WE" | translate }}</a>
         </div>
       <!--   <div>
        
@@ -24,23 +24,27 @@
              id="dropdownMenuLink" 
              data-bs-toggle="dropdown" 
              aria-expanded="false">
-              {{ "AB.HOME-OPTIONS.WHAT_DO_WE_DO" | translate }}
+            <img class="icon-textura-points" src="../assets/icons/textura-points.png" alt="">  {{ "AB.HOME-OPTIONS.WHAT_DO_WE_DO" | translate }}
           </a>
       
           <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <li><a class="dropdown-item" (click)="navigateToSection('Personal-Temporario')">   - {{"AB.SERVICES.TEMPORARY-STAFF.TITLE" | translate}}</a></li>
+             <!--  <li><a class="dropdown-item" (click)="navigateToSection('Personal-Temporario')">   - {{"AB.SERVICES.TEMPORARY-STAFF.TITLE" | translate}}</a></li>
               <li><a class="dropdown-item" (click)="navigateToSection('Facility-Services')">  - {{"AB.SERVICES.FACILITY-SERVICES.TITLE" | translate}}</a></li>
               <li><a class="dropdown-item" (click)="navigateToSection('Payroll')">  - {{"AB.SERVICES.PAYROLL.TITLE" | translate}}</a></li>
               <li><a class="dropdown-item" (click)="navigateToSection('Busqueda-Seleccion')">- {{"AB.SERVICES.SEARCH-SELECCTION.TITLE" | translate}}</a></li>
       
-              <!-- Dropdown con submenú -->
+              Dropdown con submenú 
               <li class="dropdown-submenu">
                   <a class="dropdown-item dropdown-toggle" href="#">-{{"AB.WORK-WITH-US-EE-UU.AMERBIS-EXPERIENCE.TITLE" | translate}}</a>
                   <ul class="dropdown-menu">
                       <li><a class="dropdown-item cursor" (click)="navigateToSection('Amerbis-experience')"> - {{"AB.WORK-WITH-US-EE-UU.AMERBIS-EXPERIENCE.SUBTITLE" | translate}}</a></li>
                       <li><a class="dropdown-item cursor" (click)="navigateToSection('job-opportunities')">  - {{"AB.WORK-WITH-US-EE-UU.JOB-OPPORTUNITIES.TITLE" | translate}}</a></li>
                   </ul>
-              </li>
+              </li> -->
+
+              <li><a class="dropdown-item cursor" (click)="navigateToSection('what-we-do')">- {{"AB.OPTIONS-NAVBAR.BUSINESS-SERVICES" | translate}}</a></li>
+             
+              <li><a class="dropdown-item cursor" (click)="navigateToSection('work-with-us')">  - {{"AB.WORK-WITH-US-EE-UU.JOB-OPPORTUNITIES.TITLE" | translate}}</a></li>
           </ul>
       </div>
          

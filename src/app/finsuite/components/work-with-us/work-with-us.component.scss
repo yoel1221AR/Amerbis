@@ -1,67 +1,114 @@
 .work-with-us {
+  &__background {
+    background-image: url(../../../../assets/img/banner-work-with-us.webp); 
+    background-color: rgb(255, 255, 255);
+    background-size: cover;
+    height: 100%;
+    position: relative;
+    margin-left: 0;
+  }
 
-    &__background {
-      background-image: url(../../../../assets/img/banner-work-with-us.webp); 
-      background-color: rgb(255, 255, 255);
-      background-size: cover;
-      height: 100%;
-      position: relative;
-      margin-left: 0;
-    }
+  &__standars {
+    background-image: url(../../../../assets/img/banner-work-with-us.webp); 
+    background-size: cover; /* Asegura que la imagen cubra todo el área */
+    background-position: center; /* Centra la imagen horizontal y verticalmente */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    width: auto;
+    border: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-overflow: clip;
+    overflow: hidden;
+    height: 70vh;
+    justify-content: flex-end;
+  }
+
+  &__title {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    text-transform: uppercase;
     
-    &__standars {
-     /*  background-color: rgb(0, 203, 197, 0.7); */
-      background-size: cover;
-      width: auto;
-      border: none;
-      color: white;
-      display: flex;
-      flex-direction: column;
-      gap: 2rem;
-      text-overflow: clip;
-      overflow: hidden;
-      padding: 4rem 0;
-      height: 73vh;
-    }
-    &__title{
+    &-border {
       display: flex;
       justify-content: center;
-      font-size: 3rem;
-      text-transform: uppercase;
-      &-border{
-        display: flex;
-        justify-content: center;
-        font-size: 2.5rem;
-        padding: 0.5rem 2rem;
-        border: 3px solid #ffff;
-        border-radius: 1rem;
-      }
+      font-size: 2.5rem;
+      padding: 0.5rem 2rem;
+      border: 3px solid #ffff;
+      border-radius: 1rem;
     }
-    &__options{
+  }
+
+  &__options {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 1rem;
-    &-option{
+    gap: 0.5rem;
+    padding: 3rem;
+
+    &-option {
       display: flex;
-      /* flex-direction: column;
-      align-items: center;
-      width: 15%;
-      gap: 1.5rem; */
-     /*  &--image{
-        width: 6rem;
-        height: 5rem;
-        border-radius: 50%;
-        object-fit: cover;
-      } */}}
-    
-    
-    
+      
+      &--text {
+        justify-content: center;
+        display: flex;
+        color: white;
+        text-transform: uppercase;
+        font-size: 1rem;
+        flex-wrap: wrap;
+        padding: 1rem 0;
+        background-color: rgba(0, 203, 197, 0.7);
+      }
     }
-    
-    
-    .title:hover{
-      background-color: #4b4b4ba1;
-      cursor: pointer;
-    }
-    
+  }
+}
+
+// Efecto hover
+.title:hover {
+  background-color: #4b4b4ba1;
+  cursor: pointer;
+}
+
+// Media queries
+@media (min-width: 768px) and (max-width: 1024px) {
+  .work-with-us__standars {
+    height: 65vh;
+  }
+  .prueba{
+    font-size: 3vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .work-with-us__standars {
+    height: 30vh;
+    background-image: url(../../../../assets/img/banner-work-with-us.webp); 
+    background-size: cover; /* Asegura que la imagen cubra todo el área */
+    background-position: center; /* Centra la imagen horizontal y verticalmente */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    width: auto;
+    border: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-overflow: clip;
+    overflow: hidden;
+    justify-content: flex-end;
+  }
+  .title{
+    font-size: 3vh;
+  }
+  .prueba{
+    font-size: 3vh;
+  }
+}
+
+
+
+.prueba{
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 8vh;
+}

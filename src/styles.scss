@@ -167,3 +167,65 @@ padding: 3rem;
   flex-direction: column;
   gap: 0.5rem;
 }
+
+a {
+  font-family: "Montserrat", sans-serif; /* Corrige la comilla extra */
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.flecha{
+  width: 14%;
+    height: 14rem;
+}#dropdownMenuLink {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #ffffff; /* Ajusta el color que desees */
+  text-decoration: none;
+}
+
+#dropdownMenuLink:hover,
+#dropdownMenuLink:focus,
+#dropdownMenuLink:active {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #ffffff; /* Mantiene el color original */
+  background-color: transparent; /* Mantiene el fondo original */
+  text-decoration: none; /* Elimina el subrayado */
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus,
+.dropdown-item:active {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  background-color: #5b6ff6; /* Color violeta para el item seleccionado */
+  color: white;
+}
+
+.cursor {
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  text-transform: uppercase !important;
+  color: #ffffff !important; /* Ajusta según tu preferencia */
+  text-decoration: none !important;
+  display: flex;
+  align-items: center; /* Alinea el ícono y el texto */
+}
+
+.cursor:hover,
+.cursor:focus,
+.cursor:active {
+  color: #ffffff !important; /* Color fijo para todos los estados */
+  background-color: transparent !important; /* Sin cambios de fondo */
+  text-decoration: none !important; /* Sin subrayado */
+  outline: none !important; /* Elimina cualquier borde de enfoque */
+}

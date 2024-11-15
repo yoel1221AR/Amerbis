@@ -14,7 +14,7 @@
     },
 "OPTIONS-NAVBAR":{
     
-    "WORK-WITH-US":"Trabajá con Nosotros",
+    "WORK-WITH-US":"Trabajá con Nosotros en ee.uu",
     
     "BUSINESS-SERVICES":"Servicios para empresas"
 },
@@ -40,8 +40,8 @@
     "SERVICES": {
     "TEMPORARY-STAFF": {
       "TITLE": "Personal Temporario",
-      "DESCRIPTION": "Ofrecemos soluciones integrales de personal temporario en Argentina, diseñadas para cubrir las necesidades laborales de las empresas en momentos de alta demanda o proyectos específicos. Este servicio permite a las organizaciones acceder a trabajadores calificados de manera flexible y rápida, sin comprometer la eficiencia ni la calidad de sus operaciones."
-     
+      "DESCRIPTION": "Ofrecemos soluciones integrales de personal temporario en Argentina, diseñadas para cubrir las necesidades laborales de las empresas en momentos de alta demanda o proyectos específicos. Este servicio permite a las organizaciones acceder a trabajadores calificados de manera flexible y rápida, sin comprometer la eficiencia ni la calidad de sus operaciones.",
+     "TEXT-DESTACTED":"Donde hay problemas, nosotros vemos oportunidades…"
     },
     "FACILITY-SERVICES": {
       "TITLE": "Facility Services",
@@ -62,8 +62,8 @@
     "AMERBIS-EXPERIENCE": {
       "TITLE": "Trabajá en ee.uu",
       "SUBTITLE": "Experiencia AMERBIS",
-      "DESCRIPTION": "Nos encargamos de facilitar todo el proceso, desde la selección hasta la gestión de tu VISA, asegurando que cumplas con todos los requisitos legales. A través de esta oportunidad, podrás trabajar en proyectos de producción de semillas, desarrollarte  profesionalmente, y formar parte de un equipo comprometido con el éxito de grandes operaciones agrícolas."
-     
+      "DESCRIPTION": "Nos encargamos de facilitar todo el proceso, desde la selección hasta la gestión de tu VISA, asegurando que cumplas con todos los requisitos legales. A través de esta oportunidad, podrás trabajar en proyectos de producción de semillas, desarrollarte  profesionalmente, y formar parte de un equipo comprometido con el éxito de grandes operaciones agrícolas.",
+       "TEXT-DESTACTED":"Te acompañamos en cada paso del camino"
     },
     "JOB-OPPORTUNITIES": {
       "TITLE": "Oportunidades Laborales",

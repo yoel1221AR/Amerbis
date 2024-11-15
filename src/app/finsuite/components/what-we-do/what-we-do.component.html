@@ -1,89 +1,43 @@
-
 <div class="what-we-do">
-<div class="what-we-do__background">
-  <div class="what-we-do__standars">
-   
-  <!--   <div  class="what-we-do__title">
-      <div  class="what-we-do__title-border">
-      {{"AB.HOME-OPTIONS.WHAT_DO_WE_DO" | translate}}
-      </div> 
-    </div>  -->
-    
-
-
+  <div class="what-we-do__background">
+    <div class="what-we-do__standars">
+      <!-- Opciones de servicio -->
       <div class="what-we-do__options container-fluid">
-
-
-<div class="what-we-do__options-option" (click)="showComponent('Personal-Temporario')">
- <!--  <img
-    loading="lazy"
-    class="what-we-do__options-option--image"
-    src="../../../assets/Laboratorio.jpg"
-    alt="Recursos Humanos"
-  /> -->
-  <div class="title">
-   - {{"AB.SERVICES.TEMPORARY-STAFF.TITLE" | translate}}
-  </div>
-</div>
-
-<div class="what-we-do__options-option" (click)="showComponent('Facility-Services')">
-  <!-- <img
-    loading="lazy"
-    class="what-we-do__options-option--image"
-    src="../../../assets/Laboratorio.jpg"
-    alt="Procesos productivos y de gestion"
-  /> -->
-  <div class="title">
-   - {{"AB.SERVICES.FACILITY-SERVICES.TITLE" | translate}}
-  </div>
-</div>
-
-<div class="what-we-do__options-option" (click)="showComponent('Payroll')">
- <!--  <img
-    loading="lazy"
-    class="what-we-do__options-option--image"
-    src="../../../assets/Laboratorio.jpg"
-    alt="Simplificar negocios"
-  /> -->
-  <div class="title">
-   - {{"AB.SERVICES.PAYROLL.TITLE" | translate}}
-  </div>
-</div>
-
-<div class="what-we-do__options-option" (click)="showComponent('Busqueda-Seleccion')">
- <!--  <img
-    loading="lazy"
-    class="what-we-do__options-option--image"
-    src="../../../assets/Laboratorio.jpg"
-    alt="Formación y educación"
-  /> -->
-  <div class="title">
-   - {{"AB.SERVICES.SEARCH-SELECCTION.TITLE" | translate}}
-  </div>
-</div>
-
-
-</div>
-
+        <div class="what-we-do__options-option" (click)="showComponent('Personal-Temporario')">
+          <div class="title">
+            - {{"AB.SERVICES.TEMPORARY-STAFF.TITLE" | translate}}
+          </div>
+        </div>
+        <div class="what-we-do__options-option" (click)="showComponent('Facility-Services')">
+          <div class="title">
+            - {{"AB.SERVICES.FACILITY-SERVICES.TITLE" | translate}}
+          </div>
+        </div>
+        <div class="what-we-do__options-option" (click)="showComponent('Payroll')">
+          <div class="title">
+            - {{"AB.SERVICES.PAYROLL.TITLE" | translate}}
+          </div>
+        </div>
+        <div class="what-we-do__options-option" (click)="showComponent('Busqueda-Seleccion')">
+          <div class="title">
+            - {{"AB.SERVICES.SEARCH-SELECCTION.TITLE" | translate}}
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
-
-
-</div>
-
-<!-- Mostrar el componente según la selección con animación -->
-<div *ngIf="activeComponent === 'Personal-Temporario'" @fadeInOut>
-  <app-temporary-staff></app-temporary-staff>
-</div>
-
-<div *ngIf="activeComponent === 'Facility-Services'" @fadeInOut>
-  <app-facility-services></app-facility-services>
-</div>
-
-<div *ngIf="activeComponent === 'Payroll'" @fadeInOut>
-  <app-payroll></app-payroll>
-</div>
-
-<div *ngIf="activeComponent === 'Busqueda-Seleccion'" @fadeInOut>
-  <app-search-selection></app-search-selection>
+  <!-- Mostrar el componente según la selección con animación -->
+  <div *ngIf="activeComponent === 'Personal-Temporario'" @slideInFromRight>
+    <app-temporary-staff></app-temporary-staff>
+  </div>
+  <div *ngIf="activeComponent === 'Facility-Services'" @slideInFromRight>
+    <app-facility-services></app-facility-services>
+  </div>
+  <div *ngIf="activeComponent === 'Payroll'" @slideInFromRight>
+    <app-payroll></app-payroll>
+  </div>
+  <div *ngIf="activeComponent === 'Busqueda-Seleccion'" @slideInFromRight>
+    <app-search-selection></app-search-selection>
+  </div>
 </div>
