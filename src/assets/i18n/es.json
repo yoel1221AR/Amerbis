@@ -5,6 +5,10 @@
       "WHAT_DO_WE_DO": "Qué hacemos"
   
     },
+
+    
+
+
  
     "HEADER": {
       "LANGUAGES": {
@@ -13,10 +17,10 @@
       }
     },
 "OPTIONS-NAVBAR":{
+     "BUSINESS-SERVICES":"Servicios para empresas",
+    "WORK-WITH-US":"Trabajá en ee.uu"
     
-    "WORK-WITH-US":"Trabajá con Nosotros en ee.uu",
-    
-    "BUSINESS-SERVICES":"Servicios para empresas"
+   
 },
     "WE":
      {

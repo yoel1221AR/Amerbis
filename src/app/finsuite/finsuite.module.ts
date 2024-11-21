@@ -3,7 +3,6 @@ import { CommonModule, CurrencyPipe, DatePipe } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatSortModule } from '@angular/material/sort';
-import { StoreModule } from '@ngrx/store';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { SharedModule } from '../shared/shared.module';
 import { IpButtonFiltersComponent } from './components/ip-button-filters/ip-button-filters.component';
@@ -26,6 +25,7 @@ import { SearchSelectionComponent } from './components/search-selection/search-s
 import { WorkWithUsComponent } from './components/work-with-us/work-with-us.component';
 import { AmerbisExperienceComponent } from './components/amerbis-experience/amerbis-experience.component';
 import { JobOpportunitiesComponent } from './components/job-opportunities/job-opportunities.component';
+import { BannersComponent } from './components/banners/banners.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +45,7 @@ import { JobOpportunitiesComponent } from './components/job-opportunities/job-op
     FacilityServicesComponent,
     PayrollComponent,
     SearchSelectionComponent,
-    WorkWithUsComponent, AmerbisExperienceComponent, JobOpportunitiesComponent
+    WorkWithUsComponent, AmerbisExperienceComponent, JobOpportunitiesComponent, BannersComponent
   ],
   imports: [
     CommonModule,

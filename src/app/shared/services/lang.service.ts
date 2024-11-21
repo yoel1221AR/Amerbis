@@ -9,8 +9,9 @@ import { Lang } from '../models/Lang';
 })
 export class LangService {
   private languages: Lang[] = [
-    { code: 'es', label: 'AB.HEADER.LANGUAGES.ES', img: 'assets/icons/top-nav/icon-language-arg.webp'},
-    { code: 'pt', label: 'AB.HEADER.LANGUAGES.PT', img: 'assets/icons/top-nav/icon-language-usa.png' },
+    { code: 'en', label: 'AB.HEADER.LANGUAGES.PT',  img: 'assets/icons/top-nav/BANDERAS_EEUU.svg' },
+    { code: 'es', label: 'AB.HEADER.LANGUAGES.ES', img: 'assets/icons/top-nav/BANDERAS_ARGENTINA.svg'},
+   
   ];
 
   private currentLanguageSubject: BehaviorSubject<Lang> =

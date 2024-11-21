@@ -257,3 +257,47 @@ a{
   background-color: #5b6ff6; /* Color violeta para el item seleccionado */
   color: white;
 }
+
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  /* El color de las líneas del ícono ahora es blanco */
+}
+
+
+.offcanvas {
+  background-color: #f8f9fa; /* Gris claro */
+  color: #212529; /* Color de texto, opcional */
+}
+
+.offcanvas-header {
+ 
+}
+
+.offcanvas-body {
+  background-color: rgba(29, 37, 40, 0.8509803922); /* Fondo del cuerpo del menú */
+}
+
+.offcanvas .nav-item .nav-link {
+  color: #ffffff; /* Color del texto en los enlaces */
+}
+
+.offcanvas .btn-close {
+  color: #212529; /* Color del botón de cerrar */
+}
+.offcanvas-body {
+  overflow-y: auto; /* Permitir scroll si hay muchas opciones */
+  max-height: 100vh; /* Asegurar que el contenido no se salga de la pantalla */
+  padding: 1rem; /* Espaciado interno */
+}
+
+.nav-link {
+  cursor: pointer; /* Asegurar que el puntero cambie al pasar por un enlace */
+  text-decoration: none; /* Quitar subrayado para una apariencia más limpia */
+  color: #000; /* Asegurar color contrastante */
+}
+
+/* Estilos CSS para mejorar la transición del menú */
+.offcanvas {
+  transition: transform 0.3s ease;
+}
