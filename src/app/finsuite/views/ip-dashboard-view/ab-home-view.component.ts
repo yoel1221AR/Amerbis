@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { Subscription } from 'rxjs';
+import { Lang } from 'src/app/shared/models/Lang';
+import { LangService } from 'src/app/shared/services/lang.service';
 
 @Component({
   selector: 'app-ab-home-view',
@@ -7,8 +10,15 @@ import { Component } from '@angular/core';
 })
 export class AbHomeViewComponent {
   isOffcanvasOpen = false; // Controla el estado del menú offcanvas
-
-  constructor() {}
+  currentLanguage!: Lang;
+  private subscription!: Subscription; // Objeto Lang que contiene código y demás datos del idioma
+  constructor(private langService: LangService) {}
+  ngOnInit(): void {
+    // Suscribirse a los cambios del idioma actual
+    this.subscription = this.langService.currentLanguage$.subscribe(
+      (lang) => (this.currentLanguage = lang)
+    );
+  }
 
   // Método para manejar el desplazamiento hacia una sección
   navigateToSection(sectionId: string) {
@@ -45,5 +55,12 @@ export class AbHomeViewComponent {
     }
 
     this.toggleOffcanvas(); // Cierra el menú después de navegar
+  }
+
+  ngOnDestroy(): void {
+    // Desuscribirse para evitar fugas de memoria
+    if (this.subscription) {
+      this.subscription.unsubscribe();
+    }
   }
 }

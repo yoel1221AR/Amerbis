@@ -26,7 +26,7 @@
               <li><a class="dropdown-item cursor" (click)="navigateToSection('work-with-us')">- {{ "AB.OPTIONS-NAVBAR.WORK-WITH-US" | translate }}</a></li>
             </ul>
           </div>
-          <a href="https://wa.me/542475434660" target="_blank" rel="noopener noreferrer">
+          <a *ngIf="currentLanguage.code === 'es'"  href="https://wa.me/542475434660" target="_blank" rel="noopener noreferrer">
             <img loading="lazy" class="ab-home-view__header-options--icono-mail" 
                  src="../assets/icons/top-nav/wpp.webp" 
                  alt="icono de correo" />
