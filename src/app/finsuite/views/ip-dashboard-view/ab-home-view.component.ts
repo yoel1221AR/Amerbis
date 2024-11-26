@@ -27,6 +27,18 @@ export class AbHomeViewComponent implements AfterViewInit {
     );
   }
 
+  navigateToSectiones(sectionId: string) {
+    const element = document.getElementById(sectionId);
+    if (element) {
+     
+      const y = element.getBoundingClientRect().top + window.pageYOffset ;
+
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    }
+
+
+  }
+
   ngAfterViewInit(): void {
     // Inicializamos el offcanvas al cargar la vista
     const offcanvas = new Offcanvas(this.offcanvasMenu.nativeElement);
@@ -67,5 +79,12 @@ export class AbHomeViewComponent implements AfterViewInit {
         resolve(); // Se resuelve cuando el offcanvas se ha cerrado
       });
     });
+  }
+
+  ngOnDestroy(): void {
+    // Desuscribirse para evitar fugas de memoria
+    if (this.subscription) {
+      this.subscription.unsubscribe();
+    }
   }
 }

@@ -8,7 +8,7 @@
         <!-- Menú en pantallas grandes -->
         <div class="ab-home-view__header-options d-none d-lg-flex">
           <div>
-            <a class="cursor" (click)="navigateToSection('directors')">
+            <a class="cursor" (click)="navigateToSectiones('directors')">
               <img class="icon-textura-points" src="../assets/icons/textura-points.png" alt="">{{ "AB.HOME-OPTIONS.WE" | translate }}
             </a>
           </div>
@@ -22,8 +22,8 @@
               <img class="icon-textura-points" src="../assets/icons/textura-points.png" alt="">{{ "AB.HOME-OPTIONS.WHAT_DO_WE_DO" | translate }}
             </a>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <li><a class="dropdown-item cursor" (click)="navigateToSection('what-we-do')">- {{ "AB.OPTIONS-NAVBAR.BUSINESS-SERVICES" | translate }}</a></li>
-              <li><a class="dropdown-item cursor" (click)="navigateToSection('work-with-us')">- {{ "AB.OPTIONS-NAVBAR.WORK-WITH-US" | translate }}</a></li>
+              <li><a class="dropdown-item cursor" (click)="navigateToSectiones('what-we-do')">- {{ "AB.OPTIONS-NAVBAR.BUSINESS-SERVICES" | translate }}</a></li>
+              <li><a class="dropdown-item cursor" (click)="navigateToSectiones('work-with-us')">- {{ "AB.OPTIONS-NAVBAR.WORK-WITH-US" | translate }}</a></li>
             </ul>
           </div>
           <a *ngIf="currentLanguage.code === 'es'"  href="https://wa.me/542475434660" target="_blank" rel="noopener noreferrer">
