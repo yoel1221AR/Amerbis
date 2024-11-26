@@ -112,3 +112,23 @@
   font-weight: 600;
   font-size: 8vh;
 }
+
+.work-with-us__background {
+  position: relative; /* El contenedor principal debe ser relativo */
+  overflow: hidden;  /* Para evitar que los componentes se desborden */
+}
+
+.active-component {
+  /* Usamos relative para asegurar que el componente se quede en su posición normal dentro del flujo */
+  position: relative;
+  width: 100%; /* Asegura que el componente ocupe el 100% del ancho */
+  height: 100%; /* Ajusta la altura del contenedor si es necesario */
+  overflow: hidden; /* Evita que el componente se desborde */
+  transition: transform 900ms ease-out; /* Animación para el componente activo */
+  z-index: 10; /* Asegura que el componente activo se muestre encima de los demás */
+}
+
+.work-with-us__options-option {
+  cursor: pointer;
+}
+

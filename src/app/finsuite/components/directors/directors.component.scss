@@ -90,7 +90,7 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    padding: 3rem;
+    padding: 1.5rem 3rem;
     gap: 1rem;
   }
 }
@@ -125,9 +125,10 @@
         }
   
         &--subtitle {
-          font-family: 'Montserrat', sans-serif;
+        /*   font-family: 'Montserrat', sans-serif;
           font-weight: 700;
-          font-size: 3vh;
+          font-size: 3vh; */
+        display: none;
         }
   
         &--description {
@@ -154,6 +155,13 @@
     /*   font-size: 30px; /* Tamaño de fuente */
     font-size: 3vh;
     } 
+    .title-description {
+      color:#cccccc;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600; /* SemiBold */
+      /*   font-size: 30px; /* Tamaño de fuente */
+      font-size: 2vh;
+      } 
     .subtitle-primary{
       color:#cccccc;
       font-family: 'Montserrat', sans-serif;
@@ -198,9 +206,10 @@
         }
   
         &--subtitle {
-          font-family: 'Montserrat', sans-serif;
+      /*     font-family: 'Montserrat', sans-serif;
           font-weight: 700;
-          font-size: 7vh;
+          font-size: 7vh; */
+          display: none;
         }
   
         &--description {
@@ -227,6 +236,13 @@
     /*   font-size: 30px; /* Tamaño de fuente */
     font-size: 2.5vh;
     } 
+    .title-description {
+      color:#cccccc;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600; /* SemiBold */
+      /*   font-size: 30px; /* Tamaño de fuente */
+      font-size: 2vh;
+      } 
     .subtitle-primary{
       color:#cccccc;
       font-family: 'Montserrat', sans-serif;

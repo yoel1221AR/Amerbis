@@ -1,24 +1,17 @@
-
-
-.standars {
-   /* 
-    background-color: rgb(72, 163, 182, 0.7); */
-    background-size: cover;
-    width: auto;
-    border: none;
-    color: white;
-    display: block;
-    text-overflow: clip;
-    overflow: hidden;/* 
-    padding: 0 !important ; */
-    padding: 2rem 3rem;   
-  display: flex;
-  flex-direction: column;
-
+.ab-amerbis-experience{
+&__standars {
+  background-size: cover;
+  width: auto;
+  border: none;
+  color: white;
+  display: block;
+  text-overflow: clip;
+  overflow: hidden;
+  padding: 1.5rem 3rem;   
+display: flex;
+flex-direction: column;
 }
-.background {
-    /* 
-  background-image: url(../../../../assets/Fondo.png); */
+&__background {
   background-color: rgb(255, 255, 255);
   background-size: cover;
   height: 100%;
@@ -26,23 +19,26 @@
   margin-left: 0;
 }
 
-
-
-.description{
-  
+&__description{
 display: flex;
 flex-direction: row;
 justify-content: space-around;
-
 gap: 0.5rem;
 }
 
+}
+
+
+
 // Media queries
 @media (min-width: 768px) and (max-width: 1024px) {
-  .standars {
+  .ab-amerbis-experience{
+    &__standars {
     padding: 1.5rem;
     height: 16rem;
-  }  .title-primary {
+  } 
+}
+  .title-primary {
     color: #cccccc;
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
@@ -58,11 +54,18 @@ gap: 0.5rem;
 }
 
 @media (max-width: 768px) {
-  .standars {
+  .ab-amerbis-experience{
+    &__standars {
     padding: 2rem;
     height: auto;
   }
-  .row {
+  &__description{
+  display: flex;
+    flex-direction: column;
+}
+
+}
+.row {
     width: 100%;
   }
   .title-primary {
@@ -77,10 +80,8 @@ gap: 0.5rem;
   font-weight: 400;
   /* font-size: 20px; */
   font-size: 2vh;
-}.description{
-  display: flex;
-    flex-direction: column;
 }
 .flecha{display: none;
 }
 }
+  

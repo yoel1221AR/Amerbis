@@ -5,7 +5,7 @@
       <div class="what-we-do__options container-fluid">
         <div class="what-we-do__options-option" (click)="showComponent('Personal-Temporario')">
           <div class="title">
-            - {{"AB.SERVICES.TEMPORARY-STAFF.TITLE" | translate}}
+             {{"AB.SERVICES.TEMPORARY-STAFF.TITLE" | translate}}
           </div>
         </div>
         <div class="what-we-do__options-option" (click)="showComponent('Facility-Services')">
@@ -15,12 +15,12 @@
         </div>
         <div class="what-we-do__options-option" (click)="showComponent('Payroll')">
           <div class="title">
-            - {{"AB.SERVICES.PAYROLL.TITLE" | translate}}
+             {{"AB.SERVICES.PAYROLL.TITLE" | translate}}
           </div>
         </div>
         <div class="what-we-do__options-option" (click)="showComponent('Busqueda-Seleccion')">
           <div class="title">
-            - {{"AB.SERVICES.SEARCH-SELECCTION.TITLE" | translate}}
+             {{"AB.SERVICES.SEARCH-SELECCTION.TITLE" | translate}}
           </div>
         </div>
       </div>
@@ -28,16 +28,16 @@
   </div>
 
   <!-- Mostrar el componente según la selección con animación -->
-  <div *ngIf="activeComponent === 'Personal-Temporario'" @slideInFromRight>
+  <div *ngIf="activeComponent === 'Personal-Temporario'" class="active-component" @slideInFromRight>
     <app-temporary-staff></app-temporary-staff>
   </div>
-  <div *ngIf="activeComponent === 'Facility-Services'" @slideInFromRight>
+  <div *ngIf="activeComponent === 'Facility-Services'" class="active-component" @slideInFromRight>
     <app-facility-services></app-facility-services>
   </div>
-  <div *ngIf="activeComponent === 'Payroll'" @slideInFromRight>
+  <div *ngIf="activeComponent === 'Payroll'" class="active-component" @slideInFromRight>
     <app-payroll></app-payroll>
   </div>
-  <div *ngIf="activeComponent === 'Busqueda-Seleccion'" @slideInFromRight>
+  <div *ngIf="activeComponent === 'Busqueda-Seleccion'" class="active-component" @slideInFromRight>
     <app-search-selection></app-search-selection>
   </div>
 </div>

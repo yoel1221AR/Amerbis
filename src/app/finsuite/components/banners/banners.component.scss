@@ -1,26 +1,11 @@
-.ab-directors {
-    &__background {
-      background-color: rgb(255, 255, 255);
-      background-size: cover;
-      height: 100%;
-      position: relative;
-      margin-left: 0;
-    }
-  
-    &__standars {
-      background-color: rgba(255, 10, 10, 0.7);
-      background-size: cover;
-      width: auto;
-      border: none;
-      color: white;
-      display: block;
-      text-overflow: clip;
-      overflow: hidden;
-    }
-  
+.ab-banner {
+
+  &__container {
+    position: relative; 
+  }
     &__banner {
       width: 100%;
-      height: 89vh; // Altura predeterminada para pantallas estándar
+      height: 89vh; 
       display: block;
       background-size: cover;
       background-position: center;
@@ -28,7 +13,6 @@
   
       &-home {
         position: absolute;
-/*         bottom: 2%; */
         left: 50%;
         transform: translateX(-50%);
         z-index: 2;
@@ -37,188 +21,41 @@
         object-fit: contain;
       }
   
-      &-options {
-        position: absolute;
-        bottom: 10%;
-        left: 50%;
-        transform: translateX(-50%);
-        display: flex;
-        gap: 0.5rem;
-        z-index: 1;
-      }
     }
   
-    &__body {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      padding: 2rem 3rem;
-  
-      &-image {
-        object-fit: cover;
-        width: 30%;
-      }
-  
-      &-text {
-        color: white;
-        display: flex;
-        flex-direction: column;
-  
-        &--title {
-          font-family: 'Montserrat', sans-serif;
-          font-weight: 600;
-          font-size: 9vh;
-        }
-  
-        &--subtitle {
-          font-family: 'Montserrat', sans-serif;
-          font-weight: 700;
-          font-size: 9vh;
-        }
-  
-        &--description {
-          font-family: 'Montserrat', sans-serif;
-          font-weight: 300;
-          font-style: italic;
-          font-size: 4vh;
-        }
-      }
-    }
-  
-    &__descriptions {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      align-items: center;
-      padding: 3rem;
-    }
+    
   }
   
   
   /* Media query para pantallas pequeñas (smartphones) */
   @media (max-width: 768px) {
-    .ab-directors__banner {
+    .ab-banner__banner {
       height: 92vh;
     }
-    .ab-directors__body{
-      
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-        padding: 1rem 2rem;
-    
-        &-image {
-          object-fit: cover;
-          width: 40%;
-        }
-    
-        &-text {
-          color: white;
-          display: flex;
-          flex-direction: column;
-    
-          &--title {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 600;
-            font-size: 3vh;
-          }
-    
-          &--subtitle {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 700;
-            font-size: 3vh;
-          }
-    
-          &--description {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 300;
-            font-style: italic;
-            font-size: 2vh;
-          }
-        
-      }
-    }
-    .ab-directors__descriptions {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items:flex-start;
-      padding: 1rem 2rem
-    }
+  
   
     .title-primary {
       color:#cccccc;
         font-family: 'Montserrat', sans-serif;
-        font-weight: 600; /* SemiBold */
-      /*   font-size: 30px; /* Tamaño de fuente */
+        font-weight: 600;
       font-size: 3vh;
       } 
       .subtitle-primary{
         color:#cccccc;
         font-family: 'Montserrat', sans-serif;
-        font-weight: 400; /* Regular */
-      /*   font-size: 20px;  *//* Tamaño de fuente */
+        font-weight: 400; 
       font-size: 2vh;
       }
-      .ab-directors__banner-options{
-        flex-direction: column;
-    }
-    .flecha{
-      display: none;
-      }
+  
+   
   }
   
   /* Media query para tablets (ancho entre 768px y 1024px) */
   @media (min-width: 768px) and (max-width: 1024px) {
-    .ab-directors__banner {
+    .ab-banner__banner {
       height: 92vh;
     }
-    .ab-directors__body{
-      
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-        padding: 1rem 2rem;
-    
-        &-image {
-          object-fit: cover;
-          width: 30%;
-        }
-    
-        &-text {
-          color: white;
-          display: flex;
-          flex-direction: column;
-    
-          &--title {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 600;
-            font-size: 7vh;
-          }
-    
-          &--subtitle {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 700;
-            font-size: 7vh;
-          }
-    
-          &--description {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 300;
-            font-style: italic;
-            font-size: 3vh;
-          }
-        
-      }
-    }
-    .ab-directors__descriptions {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      align-items:flex-start;
-      padding: 1.5rem 2rem
-    }
-  
+
     .title-primary {
       color:#cccccc;
         font-family: 'Montserrat', sans-serif;
@@ -232,25 +69,9 @@
         font-weight: 400; /* Regular */
       /*   font-size: 20px;  *//* Tamaño de fuente */
       font-size: 2vh;
-      }  .ab-directors__banner-options{
-        flex-direction: column;
-    }
-  
+      }  
     
   }
   
   
-  
-  
-  /* Botón 1 */
-  .btn-1 { 
-      background-color: #007bff;
-  }
-  
-  .btn-2 {
-     background-color: #6c757d;
-    
-    }.ab-directors__container {
-    position: relative; /* Necesario para que los botones se posicionen dentro del contenedor */
-  }
   

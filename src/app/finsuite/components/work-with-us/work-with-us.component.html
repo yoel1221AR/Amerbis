@@ -1,38 +1,75 @@
-
 <div class="work-with-us">
-    <div class="work-with-us__background">
-      <div class="work-with-us__standars">
- 
-    
-    
-          <div class="work-with-us__options container-fluid">
-            <div class="prueba">
-               {{"AB.WORK-WITH-US-EE-UU.AMERBIS-EXPERIENCE.TITLE" | translate}}
-             </div>
-    
-    <div class="work-with-us__options-option" (click)="showComponent('Amerbis-experience')">
+  <div class="work-with-us__background">
+    <div class="work-with-us__standars">
+      <div class="work-with-us__options container-fluid">
+        <div class="prueba">
+          {{"AB.WORK-WITH-US-EE-UU.AMERBIS-EXPERIENCE.TITLE" | translate}}
+        </div>
 
-      <div class="title">
-        - {{"AB.WORK-WITH-US-EE-UU.AMERBIS-EXPERIENCE.SUBTITLE" | translate}}
-       </div>
-    </div>
-    
-    <div class="work-with-us__options-option" (click)="showComponent('job-opportunities')">
-      <div class="title">
-       - {{"AB.WORK-WITH-US-EE-UU.JOB-OPPORTUNITIES.TITLE" | translate}}
+        <div class="work-with-us__options-option" (click)="showComponent('Amerbis-experience')">
+          <div class="title">
+            {{"AB.WORK-WITH-US-EE-UU.AMERBIS-EXPERIENCE.SUBTITLE" | translate}}
+          </div>
+        </div>
+
+        <div class="work-with-us__options-option" (click)="showComponent('job-opportunities')">
+          <div class="title">
+            {{"AB.WORK-WITH-US-EE-UU.JOB-OPPORTUNITIES.TITLE" | translate}}
+          </div>
+        </div>
       </div>
-    </div> 
-    </div>  
-      </div> 
-     </div>
-    
-    <!-- Mostrar el componente según la selección con animación -->
-    <div *ngIf="activeComponent === 'Amerbis-experience'" @slideInFromRight>
-      <app-amerbis-experience></app-amerbis-experience>
     </div>
-    
-    <!-- Mostrar el componente según la selección con animación -->
-    <div *ngIf="activeComponent === 'job-opportunities'" @slideInFromRight>
-      <app-job-opportunities></app-job-opportunities>
+  </div>
+
+
+  <div *ngIf="activeComponent === 'Amerbis-experience'" class="active-component" @slideInFromRight>
+    <app-amerbis-experience></app-amerbis-experience>
+  </div>
+
+  <div *ngIf="activeComponent === 'job-opportunities'" class="active-component" @slideInFromRight>
+    <app-job-opportunities></app-job-opportunities>
+  </div>
+</div>
+
+ <!-- <div class="work-with-us">
+  <div class="work-with-us__background">
+    <div class="work-with-us__standars">
+      <div class="work-with-us__options container-fluid">
+        <div class="prueba">
+          {{"AB.WORK-WITH-US-EE-UU.AMERBIS-EXPERIENCE.TITLE" | translate}}
+        </div>
+
+        <div
+          class="work-with-us__options-option"
+          (click)="toggleComponent('Amerbis-experience')">
+          <div class="title">
+            {{"AB.WORK-WITH-US-EE-UU.AMERBIS-EXPERIENCE.SUBTITLE" | translate}}
+          </div>
+        </div>
+
+        <div
+          class="work-with-us__options-option"
+          (click)="toggleComponent('job-opportunities')">
+          <div class="title">
+            {{"AB.WORK-WITH-US-EE-UU.JOB-OPPORTUNITIES.TITLE" | translate}}
+          </div>
+        </div>
+      </div>
     </div>
- 
+  </div>
+
+  <div
+    *ngIf="activeComponent === 'Amerbis-experience'"
+    class="active-component"
+    @slideInFromRight>
+    <app-amerbis-experience></app-amerbis-experience>
+  </div>
+
+  <div
+    *ngIf="activeComponent === 'job-opportunities'"
+    class="active-component"
+    @slideInFromRight>
+    <app-job-opportunities></app-job-opportunities>
+  </div>
+</div>
+ -->

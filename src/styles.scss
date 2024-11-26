@@ -128,6 +128,13 @@ color:#cccccc;
 /*   font-size: 30px; /* Tamaño de fuente */
 font-size: 4vh;
 } 
+.title-description {
+  color:#cccccc;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600; /* SemiBold */
+/*   font-size: 30px; /* Tamaño de fuente */
+font-size: 4vh;
+  } 
 .subtitle-primary{
   color:#cccccc;
   font-family: 'Montserrat', sans-serif;
@@ -228,4 +235,14 @@ a {
   background-color: transparent !important; /* Sin cambios de fondo */
   text-decoration: none !important; /* Sin subrayado */
   outline: none !important; /* Elimina cualquier borde de enfoque */
+}
+
+.offcanvas-backdrop.show {
+  opacity: 0 !important; /* Remover la opacidad */
+  background-color: transparent !important; /* Hacer el fondo transparente */
+}
+
+
+body.offcanvas-open {
+  overflow: auto !important; /* Evita que el body se fije en la parte superior */
 }

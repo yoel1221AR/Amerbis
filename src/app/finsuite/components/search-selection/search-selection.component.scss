@@ -1,6 +1,6 @@
 
-
-.standars {
+.ab-search-selection{
+  &__standars {
   /* 
     background-color: rgb(72, 163, 182, 0.7); */
   background-size: cover;
@@ -11,13 +11,13 @@
   text-overflow: clip;
   overflow: hidden;/* 
   padding: 0 !important ; */
-  padding: 2rem 3rem;   
-   height: 18rem;
+  padding: 1.5rem 3rem;   
+/*    height: 18rem; */
 align-items: center;
 display: flex;
 
 }
-.background {
+&__background {
     /* 
   background-image: url(../../../../assets/Fondo.png); */
   background-color: rgb(255, 255, 255);
@@ -26,6 +26,8 @@ display: flex;
   position: relative;
   margin-left: 0;
 }
+}
+
 
 p {
   font-size: large;
@@ -50,10 +52,14 @@ ul {
 
 // Media queries
 @media (min-width: 768px) and (max-width: 1024px) {
-  .standars {
+  
+  .ab-search-selection{
+  &__standars {
     padding: 1.5rem;
     height: 16rem;
-  }  .title-primary {
+  } 
+ }
+  .title-primary {
     color: #cccccc;
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
@@ -69,10 +75,12 @@ ul {
 }
 
 @media (max-width: 768px) {
-  .standars {
+  .ab-search-selection{
+    &__standars {
     padding: 2rem;
     height: auto;
   }
+}
   .row {
     width: 100%;
   }

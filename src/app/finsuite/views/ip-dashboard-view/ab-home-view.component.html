@@ -47,50 +47,72 @@
   
       <app-langSelector></app-langSelector>
    
-    <button
-          class="navbar-toggler d-lg-none"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasMenu"
-          aria-controls="offcanvasMenu"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button> </div>
+      <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasMenu"
+            aria-controls="offcanvasMenu"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+         </div>
         
       </div>
     </nav>
 
-  <!-- Menú Offcanvas -->
-<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+
+
+
+<div class="offcanvas offcanvas-end" tabindex="-1" #offcanvasMenu id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
   <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasMenuLabel"></h5>
-    <button type="button" class="btn-close text-reset" (click)="toggleOffcanvas()" aria-label="Close"></button>
+ 
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
   </div>
   <div class="offcanvas-body">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" (click)="navigateToSectiones('directors')">
+        <a class="nav-link" href="#directors" (click)="navigateToSection('directors')">
           {{ "AB.HOME-OPTIONS.WE" | translate }}
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" (click)="navigateToSectiones('what-we-do')">
+        <a class="nav-link" href="#what-we-do" (click)="navigateToSection('what-we-do')">
           {{ "AB.HOME-OPTIONS.WHAT_DO_WE_DO" | translate }}
         </a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" (click)="navigateToSectiones('work-with-us')">
+     <!--  <li class="nav-item">
+        <a class="nav-link" href="#business-services" (click)="navigateToSection('business-services')">
           {{ "AB.OPTIONS-NAVBAR.BUSINESS-SERVICES" | translate }}
+        </a>
+      </li> -->
+    
+
+      <li class="nav-item">
+        <a class="nav-link" href="#work-with-us" (click)="navigateToSection('work-with-us')">
+          {{ "AB.OPTIONS-NAVBAR.WORK-WITH-US" | translate }}
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" (click)="navigateToSectiones('work-with-us')">
-          {{ "AB.OPTIONS-NAVBAR.WORK-WITH-US" | translate }}
+        <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=info@amerbis.com" target="_blank" rel="noopener noreferrer">
+          <img loading="lazy" class="ab-home-view__header-options--icono-mail" 
+               src="../assets/icons/top-nav/icon-email.webp" 
+               alt="icono de correo" />
+      </a>
+      </li>
+      <li class="nav-item">
+        <a *ngIf="currentLanguage.code === 'es'"  href="https://wa.me/542475434660" target="_blank" rel="noopener noreferrer">
+            <img loading="lazy" class="ab-home-view__header-options--icono-mail" 
+                 src="../assets/icons/top-nav/wpp.webp" 
+                 alt="icono de correo" />
         </a>
       </li>
     </ul>
   </div>
 </div>
+    
+    
+ 
 
 
   </div>

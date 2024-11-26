@@ -97,3 +97,16 @@
     font-size: 3vh;
   }
 }
+
+.what-we-do {
+  position: relative;
+}
+
+.what-we-do__options {
+  margin-bottom: 20px;
+}
+
+.active-component {
+  /* Aquí puedes agregar una altura mínima para los componentes que entran en la pantalla */
+  min-height: 250px; /* Ajusta según el contenido */
+}

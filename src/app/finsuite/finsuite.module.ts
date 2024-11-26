@@ -10,14 +10,7 @@ import { RootComponent } from './components/root/root.component';
 import { AbHomeViewComponent } from './views/ip-dashboard-view/ab-home-view.component';
 import { DirectorsComponent } from './components/directors/directors.component';
 import { WhatWeDoComponent } from './components/what-we-do/what-we-do.component';
-import { ServicesComponent } from './components/services/services.component';
-import { IsoStandarsComponent } from './components/iso-standars/iso-standars.component';
 import {TemporarioStaffServicesComponent } from './components/temporary-staff/temporary-staff.component';
-import { ProcessImprovementComponent } from './components/process-improvement/process-improvement.component';
-import { InternalAuditsComponent } from './components/internal-audits/internal-audits.component';
-import { TrainingComponent } from './components/training/training.component';
-import { OntologicalCoachingComponent } from './components/ontological-coaching/ontological-coaching.component';
-import { HelpYouComponent } from './components/help-you/help-you.component';
 import { FinsuiteRoutingModule } from './finsuite-routing.module';
 import { FacilityServicesComponent } from './components/facility-services/facility-services.component';
 import { PayrollComponent } from './components/payroll/payroll.component';
@@ -34,14 +27,7 @@ import { BannersComponent } from './components/banners/banners.component';
     AbHomeViewComponent,
     DirectorsComponent,
     WhatWeDoComponent,
-    ServicesComponent,
-    IsoStandarsComponent,
     TemporarioStaffServicesComponent,
-    ProcessImprovementComponent,
-    InternalAuditsComponent,
-    TrainingComponent,
-    OntologicalCoachingComponent,
-    HelpYouComponent,
     FacilityServicesComponent,
     PayrollComponent,
     SearchSelectionComponent,

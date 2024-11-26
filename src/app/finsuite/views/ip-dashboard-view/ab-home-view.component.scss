@@ -301,3 +301,25 @@ a{
 .offcanvas {
   transition: transform 0.3s ease;
 }
+
+
+body {
+  scroll-behavior: smooth;
+}
+
+section {
+  margin: 0;
+  min-height: auto; 
+}
+
+/* Elimina el outline en el botón cuando se hace clic */
+button:focus {
+  outline: none;
+}
+
+/* Estilo para el botón, sin outline en el enfoque */
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;  /* Elimina el efecto de sombra */
+}
+
