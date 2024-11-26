@@ -9,7 +9,7 @@ import { Lang } from '../models/Lang';
 })
 export class LangService {
   private languages: Lang[] = [
-    { code: 'en', label: 'AB.HEADER.LANGUAGES.PT',  img: 'assets/icons/top-nav/BANDERAS_EEUU.svg' },
+    { code: 'en', label: 'AB.HEADER.LANGUAGES.PT',  img: 'assets/icons/top-nav/banderita_EEUU_48x38-01.svg' },
     { code: 'es', label: 'AB.HEADER.LANGUAGES.ES', img: 'assets/icons/top-nav/BANDERAS_ARGENTINA.svg'},
    
   ];
