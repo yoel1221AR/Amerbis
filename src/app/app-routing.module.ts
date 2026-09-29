@@ -7,11 +7,11 @@ const routes: Routes = [
     redirectTo: '',
     pathMatch: 'full',
   },
-  {
+/*   {
     path: '',
     loadChildren: () =>
       import('./finsuite/finsuite.module').then((m) => m.FinsuiteModule),
-  },
+  }, */
 ];
 
 @NgModule({

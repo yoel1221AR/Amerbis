@@ -1,6 +1,9 @@
 {
   "name": "amerbis",
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "author": "Yoel Osmar Uspong Mandelli - brixCode",
+  "copyright": "Copyright (c) 2024-2030 Yoel Osmar Uspong Mandelli - brixCode. Todos los derechos reservados.",
+  "description": "Sitio web Amerbis. Propiedad intelectual de brixCode. Uso no autorizado será perseguido legalmente.",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
